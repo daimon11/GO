@@ -1,0 +1,23 @@
+.game-over {
+  width: 1180px;
+  height: 823px;
+  background-image: url(../game-over/img/desktop-img-1.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.game-over__title {
+  font-size: 150px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: -0.1em;
+}
+
+.game-over__discription {
+  padding-left: 100px;
+  font-weight: 400;
+  font-size: 28px;
+}

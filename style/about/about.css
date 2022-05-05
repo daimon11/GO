@@ -1,0 +1,84 @@
+.about {
+  box-sizing: border-box;
+  width: 1180px;
+  height: auto;
+  margin-right: 0;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.about__discription {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.about__discription:first-of-type {
+  margin-bottom: 35px;
+}
+
+.about__phrase {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+  white-space: pre-line;
+  padding-top: 70px;
+  padding-left: 0;
+}
+
+.about__phrase::before {
+  content: "\201C";
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 50px;
+  color: #6C0287;
+  margin-right: 36px;
+}
+
+.about__phrase::after {
+  content: "\201D";
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 50px;
+  color: #6C0287;
+  margin-left: 15px;
+}
+
+.about__man {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  white-space: pre-line;
+  padding-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.about__man::before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: url(../about/img/photo-boss-icon.jpg);
+  background-position: right 0 top -10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 30px;
+}
