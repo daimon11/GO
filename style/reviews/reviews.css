@@ -11,13 +11,20 @@
   margin-bottom: 60px;
 }
 
+.reviews__customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
 .reviews__photo {
   width: 280px;
   height: 280px;
   object-fit: cover;
   border-radius: 50%;
   display: block;
-  margin-right: 20px;
+  
   margin-bottom: 10px;
 }
 
@@ -38,8 +45,3 @@
   padding-top: 55px;
 }
 
-.reviews__customer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
