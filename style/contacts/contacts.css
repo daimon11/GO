@@ -1,3 +1,7 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__title {
   font-weight: 700;
   font-size: 40px;
@@ -65,4 +69,9 @@
 
 .contacts__item:last-child {
   margin-right: 0;
+}
+
+.contacts__block-all {
+  display: flex;
+  justify-content: space-between;
 }

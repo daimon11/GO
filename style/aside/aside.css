@@ -1,0 +1,14 @@
+.aside {
+  padding-top: 66px;
+}
+
+.aside__span, .aside__address {
+  font-weight: 400;
+font-size: 14px;
+font-style: normal;
+}
+
+.aside__block {
+  display: flex;
+  justify-content: space-between;
+}

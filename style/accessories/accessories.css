@@ -1,0 +1,41 @@
+.accessories__title {
+  width: 800px;
+  ;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 40px auto;
+}
+
+.accessories__item {
+  display: block;
+}
+
+.accessories__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  gap: 40px 0;
+}
+
+.accessories__figure {
+  position: relative;
+  height: auto;
+}
+
+.accessories__img {
+  display: block;
+}
+
+.accessories__item-text {
+  position: absolute;
+  top: 166px;
+  left: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  white-space: pre-line;
+}

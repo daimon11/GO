@@ -1,0 +1,39 @@
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  gap: 0 40px;
+
+}
+
+.menu__item {
+  font-family: Arial;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.header__button-call {
+width: 280px;
+height: 55px;
+border: 3px solid #CD06FF;
+border-radius: 10px;
+font-family: 'Arial';
+font-weight: 700;
+font-size: 22px;
+text-transform: uppercase;
+color: white;
+background-color: #1b1a1b;
+}
+
+
+
+

@@ -17,7 +17,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #ffffff; /*цвет под ваш проект*/
-  background-color: #1b1a1b;; /*цвет под ваш проект*/
+  background-color: #1b1a1b; /*цвет под ваш проект*/
 }
 
 img {
@@ -52,6 +52,10 @@ blockquote {
   margin: 0;
 }
 
+figure {
+  padding: 0;
+}
+
 iframe {
   border: none;
 }
@@ -80,9 +84,9 @@ iframe {
 Чтобы контент не прижимался к краям экрана
 */
 
-.wrapper {
+.container {
   max-width: 1440px;
-  padding: 145px 130px 80px;
+  padding: 0 130px;
   margin: 0 auto;
 }
 
@@ -95,4 +99,14 @@ section,
 article,
 footer {
   padding: 50px 0;
+}
+
+.page__background {
+  position: absolute;
+  width: 100%;
+  height: 629px;
+  margin: 0 -130;
+  bottom: 0;
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  z-index: -1;
 }

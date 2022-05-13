@@ -1,11 +1,17 @@
-.game-over {
-  width: 1180px;
+.game-over__wrapper {
   height: 823px;
-  background-image: url(../game-over/img/desktop-img-1.png);
-  background-position: right bottom;
+  position: relative;
+}
+
+.game-over__wrapper::before {
+  content: "";
+  position: absolute;
+  width: 675px;
+  height: 762px;
+  background-image: url(../game-over/img/desktop-img-2.png);
   background-repeat: no-repeat;
-  padding: 0;
-  margin-bottom: 50px;
+  right: 0;
+  bottom: 0;
 }
 
 .game-over__title {
@@ -20,4 +26,57 @@
   padding-left: 100px;
   font-weight: 400;
   font-size: 28px;
+}
+
+.game-over__title-block {
+  margin-bottom: 30px;
+}
+
+.game-over__info-blocks {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 150px;
+}
+
+.game-over__info-block {
+  width: 193px;
+  height: 209px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.game-over__discription_size_xl {
+  padding-left: 0;
+  font-size: 30px;
+}
+
+.game-over__span {
+  color: #CD06FF;
+}
+
+.size_xxl {
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.size_xl {
+  font-weight: 900;
+  font-size: 75px;
+  text-transform: uppercase;
+}
+
+.game-over__btn-booking {
+  width: 374px;
+  height: 80px;
+  background-color: #6C0287;
+  border: 0;
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #6C0287;
+
 }
