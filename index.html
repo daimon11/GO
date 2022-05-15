@@ -168,6 +168,7 @@
 
           <h3 class="booking__title">Забронировать залы просто</h3>
 
+          <div class="booking__wrapper">
           <fieldset class="booking__fieldset">
             <legend class="booking__legend">Выбери зал</legend>
             <ul class="booking__halls-list">
@@ -198,14 +199,14 @@
             </ul>
           </fieldset>
 
-          <div class="booking__block">
-            <fieldset class="booking__fieldset">
+
+            <fieldset class="booking__fieldset booking__fieldset_indent">
               <legend class="booking__legend">
                 Собери набор развлечений
               </legend>
 
               <div class="booking__fun-block">
-                <fieldset class="booking__fieldset booking__fieldset_mb_none">
+                <fieldset class="booking__fieldset">
                   <legend class="booking__legend booking__legend_left">
                     Приставки:
                   </legend>
@@ -245,7 +246,7 @@
                   </ul>
                 </fieldset>
 
-                <fieldset class="booking__fieldset booking__fieldset_mb_none">
+                <fieldset class="booking__fieldset">
                   <legend class="booking__legend booking__legend_left">
                     Настольные игры:
                   </legend>
@@ -308,17 +309,17 @@
                     </li>
                   </ul>
                 </fieldset>
-              </div>
 
+              </div>
             </fieldset>
 
-            <fieldset class="booking__fieldset">
+            <fieldset class="booking__fieldset booking__fieldset_indent">
               <legend class="booking__legend">
                 Выбрери дату и время
               </legend>
 
-              <div class="booking__data-block">
-                <ul class="booking__data-list booking__data-list_gap_big">
+              <div class="booking__data-time-block">
+                <ul class="booking__data-list">
 
                   <li class="booking__item booking__item_flex">
 
@@ -332,17 +333,19 @@
                           onfocus="(this.type = 'time')" onblur="(this.type='text')" name="booking_time" required>
                       </label>
                     </div>
-
-                    <label class="booking__label booking__label-date">
-                    <input class="booking__input booking__input-date-time" placeholder="Сколько человек" type="text"
-                    onfocus="(this.type = 'number')" onblur="(this.type='number')" name="booking_numbers" required>
-                    </label>
-
                   </li>
+
+                  <li class="booking__item booking__item_flex">
+                    <label class="booking__label booking__label-date">
+                      <input class="booking__input booking__input-date-time" placeholder="Сколько человек" type="text"
+                        onfocus="(this.type = 'number')" onblur="(this.type='number')" name="booking_numbers" required>
+                    </label>
+                  </li>
+
                 </ul>
 
-                <ul class="booking__data-list booking__data-list_size_s">
-                  <li>
+                <ul class="booking__data-list">
+                  <li class="booking__item booking__item_flex">
                     <label class="booking__label  booking__label_flex_column">
                       <span class="booking__span booking__span_size_s">
                         Имя
@@ -350,7 +353,7 @@
                       <input class="booking__input" type="text" name="user-name1" required>
                     </label>
                   </li>
-                  <li>
+                  <li class="booking__item booking__item_flex">
                     <label class="booking__label  booking__label_flex_column">
                       <span class="booking__span booking__span_size_s">
                         Фамилия
@@ -361,7 +364,7 @@
                 </ul>
 
                 <ul class="booking__data-list">
-                  <li>
+                  <li class="booking__item booking__item_flex">
                     <label class="booking__label  booking__label_flex_column">
                       <span class="booking__span booking__span_size_s">
                         Телефон
@@ -369,7 +372,7 @@
                       <input class="booking__input" type="tel" name="user-tel" required>
                     </label>
                   </li>
-                  <li>
+                  <li class="booking__item booking__item_flex">
                     <label class="booking__label  booking__label_flex_column">
                       <span class="booking__span booking__span_size_s">
                         E-mail
@@ -385,12 +388,10 @@
                 </button>
               </div>
             </fieldset>
-
           </div>
-
-
         </form>
       </div>
+
     </section>
 
     <article class="about" id="about">
