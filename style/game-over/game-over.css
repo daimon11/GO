@@ -28,14 +28,14 @@
   font-size: 28px;
 }
 
-.game-over__title-block {
-  margin-bottom: 30px;
-}
-
 .game-over__info-blocks {
   display: flex;
   gap: 40px;
   margin-bottom: 150px;
+}
+
+.game-over__title-block {
+  margin-bottom: 30px;
 }
 
 .game-over__info-block {
@@ -56,18 +56,18 @@
   color: #CD06FF;
 }
 
-.size_xxl {
+.game-over__span_size_xxl {
   font-size: 100px;
   font-weight: 900;
 }
 
-.size_xl {
+.game-over__span_size_xl {
   font-weight: 900;
   font-size: 75px;
   text-transform: uppercase;
 }
 
-.game-over__btn-booking {
+.game-over__button-booking {
   width: 374px;
   height: 80px;
   background-color: #6C0287;
@@ -78,5 +78,4 @@
   color: white;
   border-radius: 10px;
   box-shadow: 0 0 20px #6C0287;
-
 }

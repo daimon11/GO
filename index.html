@@ -36,9 +36,6 @@
             <li class="menu__item">
               <a class="menu__link" href="#reviews">Отзывы</a>
             </li>
-            <!-- <li class="menu__item">
-          <a class="menu__link" href="#faq">Частые вопросы</a>
-        </li> -->
             <li class="menu__item">
               <a class="menu__link" href="#contacts">Контакты</a>
             </li>
@@ -65,16 +62,16 @@
           <div class="game-over__info-blocks">
             <div class="game-over__info-block">
               <p class="game-over__discription game-over__discription_size_xl">
-                <span class="size_xxl game-over__span">4</span> Тематических зала
+                <span class="game-over__span game-over__span_size_xxl">4</span> Тематических зала
               </p>
             </div>
             <div class="game-over__info-block">
               <p class="game-over__discription game-over__discription_size_xl">
-                <span class="size_xl game-over__span" lang="en">new</span> Новейшая аппаратура
+                <span class="game-over__span game-over__span_size_xl" lang="en">new</span> Новейшая аппаратура
               </p>
             </div>
           </div>
-          <button class="game-over__btn-booking">
+          <button class="game-over__button-booking">
             Забронировать
           </button>
         </div>
@@ -88,18 +85,16 @@
 
           <li class="accessories__item">
             <figure class="accessories__figure">
-              <img aria-colcount="accessories__img" src="./style/accessories/img/accessories-vr.jpg" alt="VR очки"
-                class="list1-vr">
-              <figcaption class="accessories__item-text">VR очки
+              <img class="accessories__img" src="./style/accessories/img/accessories-vr.jpg" alt="VR очки">
+              <figcaption class="accessories__img-text">VR очки
               </figcaption>
             </figure>
           </li>
 
           <li>
             <figure class="accessories__figure">
-              <img aria-colcount="accessories__img" src="./style/accessories/img/accessories-audio.jpg"
-                alt="Аудио-система 5.1" class="list1-audio">
-              <figcaption class="accessories__item-text">Аудио-система 5.1
+              <img class="accessories__img" src="./style/accessories/img/accessories-audio.jpg" alt="Аудио-система 5.1">
+              <figcaption class="accessories__img-text">Аудио-система 5.1
                 с отличным звуком
               </figcaption>
             </figure>
@@ -107,27 +102,24 @@
 
           <li>
             <figure class="accessories__figure">
-              <img aria-colcount="accessories__img" src="./style/accessories/img/accessories-micro.jpg" alt="Караоке"
-                class="list1-karaoke">
-              <figcaption class="accessories__item-text">Караоке (4 микрофона)
+              <img class="accessories__img" src="./style/accessories/img/accessories-micro.jpg" alt="Караоке">
+              <figcaption class="accessories__img-text">Караоке (4 микрофона)
               </figcaption>
             </figure>
           </li>
 
           <li>
             <figure class="accessories__figure">
-              <img aria-colcount="accessories__img" src="./style/accessories/img/accessories-game.jpg"
-                alt="Настольные игры" class="list1-table-games">
-              <figcaption class="accessories__item-text">Настольные игры
+              <img class="accessories__img" src="./style/accessories/img/accessories-game.jpg" alt="Настольные игры">
+              <figcaption class="accessories__img-text">Настольные игры
               </figcaption>
             </figure>
           </li>
 
           <li>
             <figure class="accessories__figure">
-              <img aria-colcount="accessories__img" src="./style/accessories/img/accessories-netflix.jpg"
-                alt="Кино сервисы" class="list1-movie">
-              <figcaption class="accessories__item-text">Кино сервисы Netflix, IVI,
+              <img class="accessories__img" src="./style/accessories/img/accessories-netflix.jpg" alt="Кино сервисы">
+              <figcaption class="accessories__img-text">Кино сервисы Netflix, IVI,
                 MegoGo, КиноПоиск, Okko
               </figcaption>
             </figure>
@@ -136,9 +128,8 @@
 
           <li>
             <figure class="accessories__figure">
-              <img aria-colcount="accessories__img" src="./style/accessories/img/accessories-sony.jpg"
-                alt="Playstation 5" class="list1-ps">
-              <figcaption class="accessories__item-text">Playstation 5
+              <img class="accessories__img" src="./style/accessories/img/accessories-sony.jpg" alt="Playstation 5">
+              <figcaption class="accessories__img-text">Playstation 5
               </figcaption>
             </figure>
           </li>
@@ -173,7 +164,7 @@
 
     <section class="booking" id="booking">
       <div class="container">
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" target="_blank">
+        <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" target="_blank">
 
           <h3 class="booking__title">Забронировать залы просто</h3>
 
@@ -219,7 +210,7 @@
                     Приставки:
                   </legend>
                   <ul class="booking__fun-list">
-                    <li>
+                    <li class="booking__item">
                       <label class="booking__label">
                         <input class="booking__radio" type="radio" name="prefixes" value="ps">
                         <span class="booking__span">
@@ -227,7 +218,7 @@
                         </span>
                       </label>
                     </li>
-                    <li>
+                    <li class="booking__item">
                       <label class="booking__label">
                         <input class="booking__radio" type="radio" name="prefixes" value="sega">
                         <span class="booking__span">
@@ -235,7 +226,7 @@
                         </span>
                       </label>
                     </li>
-                    <li>
+                    <li class="booking__item">
                       <label class="booking__label">
                         <input class="booking__radio" type="radio" name="prefixes" value="x-box">
                         <span class="booking__span">
@@ -243,7 +234,7 @@
                         </span>
                       </label>
                     </li>
-                    <li>
+                    <li class="booking__item">
                       <label class="booking__label">
                         <input class="booking__radio" type="radio" name="prefixes" value="dendy">
                         <span class="booking__span">
@@ -259,7 +250,7 @@
                     Настольные игры:
                   </legend>
                   <ul class="booking__fun-list">
-                    <li>
+                    <li class="booking__item">
                       <label class="booking__label">
                         <input class="booking__checkbox" type="checkbox" name="table-games" value="janga">
                         <span class="booking__span">
@@ -267,7 +258,7 @@
                         </span>
                       </label>
                     </li>
-                    <li>
+                    <li class="booking__item">
                       <label class="booking__label">
                         <input class="booking__checkbox" type="checkbox" name="table-games" value="monopoly">
                         <span class="booking__span">
@@ -275,7 +266,7 @@
                         </span>
                       </label>
                     </li>
-                    <li>
+                    <li class="booking__item">
                       <label class="booking__label">
                         <input class="booking__checkbox" type="checkbox" name="table-games" value="munchkin">
                         <span class="booking__span">
@@ -283,7 +274,7 @@
                         </span>
                       </label>
                     </li>
-                    <li>
+                    <li class="booking__item">
                       <label class="booking__label">
                         <input class="booking__checkbox" type="checkbox" name="table-games" value="alias">
                         <span class="booking__span">
@@ -294,12 +285,12 @@
                   </ul>
                 </fieldset>
 
-                <fieldset class="booking__fieldset booking__fieldset_mb_none">
+                <fieldset class="booking__fieldset">
                   <legend class="booking__legend booking__legend_left">
                     Дополнительно:
                   </legend>
                   <ul class="booking__fun-list">
-                    <li>
+                    <li class="booking__item">
                       <label class="booking__label">
                         <input class="booking__checkbox" type="checkbox" name="additionally" value="Karaoke">
                         <span class="booking__span">
@@ -307,7 +298,7 @@
                         </span>
                       </label>
                     </li>
-                    <li>
+                    <li class="booking__item">
                       <label class="booking__label">
                         <input class="booking__checkbox" type="checkbox" name="additionally" value="VR">
                         <span class="booking__span">
@@ -317,6 +308,7 @@
                     </li>
                   </ul>
                 </fieldset>
+              </div>
 
             </fieldset>
 
@@ -327,62 +319,62 @@
 
               <div class="booking__data-block">
                 <ul class="booking__data-list booking__data-list_gap_big">
-                  <li>
 
-                    <div class="booking__date-time">
-                      <label class="booking__label-extra booking__label-extra_date">
-                        <input class="booking__input-extra booking__input-extra_date" type="date" name="date" value=""
-                          placeholder="" required>
+                  <li class="booking__item booking__item_flex">
+
+                    <div class="booking__data-block">
+                      <label class="booking__label booking__label-date">
+                        <input class="booking__input booking__input-date-time" placeholder="Дата" type="text"
+                          onfocus="(this.type = 'date')" onblur="(this.type='text')" name="booking_day" required>
                       </label>
-                      <label class="booking__label-extra booking__label-extra_time">
-                        <input class="booking__input-extra booking__input-extra_time" type="time" name="time"
-                          placeholder="время" required>
+                      <label class="booking__label booking__label-date">
+                        <input class="booking__input booking__input-date-time" placeholder="Время" type="text"
+                          onfocus="(this.type = 'time')" onblur="(this.type='text')" name="booking_time" required>
                       </label>
                     </div>
-                  </li>
 
-                  <li>
-                    <label class="booking__label-extra booking__label-extra_num">
-                      <input class="booking__input-extra booking__input-extra_num" type="number" name="user-quantity"
-                        value="" placeholder="Сколько человек" required>
+                    <label class="booking__label booking__label-date">
+                    <input class="booking__input booking__input-date-time" placeholder="Сколько человек" type="text"
+                    onfocus="(this.type = 'number')" onblur="(this.type='number')" name="booking_numbers" required>
                     </label>
+
                   </li>
                 </ul>
 
                 <ul class="booking__data-list booking__data-list_size_s">
                   <li>
-                    <label class="booking__label-extra">
+                    <label class="booking__label  booking__label_flex_column">
                       <span class="booking__span booking__span_size_s">
                         Имя
                       </span>
-                      <input class="booking__input-extra" type="text" name="user-name1" required>
+                      <input class="booking__input" type="text" name="user-name1" required>
                     </label>
                   </li>
                   <li>
-                    <label class="booking__label-extra">
+                    <label class="booking__label  booking__label_flex_column">
                       <span class="booking__span booking__span_size_s">
                         Фамилия
                       </span>
-                      <input class="booking__input-extra" type="text" name="user-name2" required>
+                      <input class="booking__input" type="text" name="user-name2" required>
                     </label>
                   </li>
                 </ul>
 
                 <ul class="booking__data-list">
                   <li>
-                    <label class="booking__label-extra">
+                    <label class="booking__label  booking__label_flex_column">
                       <span class="booking__span booking__span_size_s">
                         Телефон
                       </span>
-                      <input class="booking__input-extra" type="tel" name="user-tel" required>
+                      <input class="booking__input" type="tel" name="user-tel" required>
                     </label>
                   </li>
                   <li>
-                    <label class="booking__label-extra">
+                    <label class="booking__label  booking__label_flex_column">
                       <span class="booking__span booking__span_size_s">
                         E-mail
                       </span>
-                      <input class="booking__input-extra" type="email" name="user-email" required>
+                      <input class="booking__input" type="email" name="user-email" required>
                     </label>
                   </li>
                 </ul>
@@ -517,30 +509,33 @@
         </div>
 
       </div>
+    </div>
 
+    <aside class="aside">
+      <div class="container">
+        <div class="aside__block">
+          <span class="aside__span">
+            © Game Over, 2022
+          </span>
 
+          <address class="aside__address">
+            <p>
+              Design by Anastasia Ilina
+            </p>
+            <a class="aside__email" href="ilina9825@gmail.com" target="_blank">ilina9825@gmail.com</a>
+          </address>
+        </div>
+      </div>
+    </aside>
+
+    <div class="page__background"></div>
 
   </footer>
+
 </body>
 
-<aside class="aside">
-  <div class="container">
-    <div class="aside__block">
-  <span class="aside__span">
-    © Game Over, 2022
-  </span>
-
-  <address class="aside__address">
-    <p>
-      Design by Anastasia Ilina
-    </p>
-    <a class="aside__email" href="ilina9825@gmail.com" target="_blank">ilina9825@gmail.com</a>
-  </address>
-</div>
-</div>
-</aside>
 
 
-<div class="page__background"></div>
-</div>
+
+
 </html>

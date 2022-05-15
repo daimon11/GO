@@ -56,7 +56,7 @@ figure {
   padding: 0;
 }
 
-iframe {
+iframe, input {
   border: none;
 }
 

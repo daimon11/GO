@@ -52,10 +52,12 @@
 }
 
 .booking__label {
+  width: 100%;
   margin: 0 auto;
   cursor: pointer;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 12px;
 }
@@ -99,6 +101,7 @@
 .booking__data-block {
   display: flex;
   justify-content: space-between;
+  gap: 32px;
   margin-bottom: 40px;
 }
 
@@ -122,7 +125,6 @@
 .booking__span_size_s {
   font-weight: 700;
   font-size: 14px;
-  margin-bottom: 6px;
 }
 
 .booking__data-list {
@@ -133,91 +135,43 @@
 
 .booking__data-list_gap_big {
   gap: 36px;
-  padding-top: 21px;
+  padding-top: 28px;
 }
 
-.booking__date-time {
+.booking__item_flex {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  position: relative;
+  flex-wrap: wrap;
 }
 
-.booking__label-extra {
-  display: flex;
+.booking__label_flex_column {
   flex-direction: column;
   align-items: flex-start;
 }
 
-.booking__label-extra_date-time {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.booking__input-extra_date,
-.booking__input-extra_time,
-.booking__input-extra_num {
-  display: none;
-}
-
-.booking__label-extra_date,
-.booking__label-extra_time,
-.booking__label-extra_num {
-  display: block;
+.booking__input {
   width: 100%;
   height: 52px;
-  background-color: white;
-  color: black;
-  cursor: pointer;
+}
+
+.booking__input-date-time {
+  height: 52px;
+  width: 100%;
+  padding: 20px;
   position: relative;
 }
 
-.booking__label-extra_date,
-.booking__label-extra_time {
-  width: 134px;
-}
-
-.booking__label-extra_date::before,
-.booking__label-extra_time::before,
-.booking__label-extra_num::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  bottom: 12px;
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.booking__label-extra_date::before {
-  content: "Дата";
-}
-
-.booking__label-extra_time::before {
-  content: "Время";
-}
-
-.booking__label-extra_num::before {
-  content: "Сколько человек";
-}
-
-.booking__label-extra_date::after,
-.booking__label-extra_time::after,
-.booking__label-extra_num::after {
-  content: "";
-  width: 21px;
-  height: 15px;
+.booking__input-date-time::placeholder {
+  color: black;
   background-image: url(../booking/img/input-cursor.svg);
   background-repeat: no-repeat;
-  z-index: 1;
-  position: absolute;
-  right: 27px;
-  bottom: 18px;
+  background-position: right top;
+  background-size: auto;
 }
 
 .booking__btn-block {
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 
 .booking__btn {

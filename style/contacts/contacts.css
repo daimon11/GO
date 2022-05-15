@@ -1,5 +1,6 @@
 .contacts {
   position: relative;
+  padding-bottom: 0;
 }
 
 .contacts__title {
@@ -74,4 +75,5 @@
 .contacts__block-all {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 166px;
 }
