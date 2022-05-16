@@ -34,6 +34,21 @@ color: white;
 background-color: #1b1a1b;
 }
 
+.header__button-call:hover {
+background-color: #6C0287;
+border: none;
+}
+
+.header__button-call:active {
+background-color: #640AA3;
+border: none;
+}
+
+.header__button-call:focus {
+background-color: #6C0287;
+border: none;
+}
+
 
 
 

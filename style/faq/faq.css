@@ -14,8 +14,12 @@
   font-weight: 700;
   font-size: 24px;
   vertical-align: middle;
-  padding: 30px 70px;
+  padding: 20px 70px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .faq__item:last-child {
@@ -27,18 +31,107 @@
   color: white;
 }
 
-.faq__item::after {
-  position: absolute;
-  content: '';
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-image: url("../faq/icons/faq__open-icon-1.svg");
-  background-size: contain;
-  right: 70px;
-  top: 25%;
+.faq__item-btn {
+  background: transparent;
+  border: none;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #440F51;
+  border-radius: 50%;
+  position: relative;
 }
 
-.faq__item:nth-child(2n)::after {
-  background-image: url("../faq/icons/faq__open-icon-2.svg");
+.faq__item-btn_color_another {
+  border: 2px solid white;
 }
+
+.faq__svg {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+/* hover */
+/* btn white */
+
+.faq__item-btn:hover {
+  background: #440F51;
+}
+
+.faq__item-btn:hover .faq__svg-path {
+  fill: white;
+}
+
+/* hover */
+/* btn fio */
+
+.faq__item-btn_color_another:hover {
+  background: white;
+}
+
+.faq__item-btn_color_another:hover .faq__svg-path {
+  fill: #440F51;
+}
+
+/* activ */
+/* btn white */
+
+.faq__item-btn:active {
+  background: transparent;
+}
+
+.faq__item-btn:active .faq__svg-path {
+  fill: #440F51;
+}
+
+.faq__item-btn:active .faq__svg-path-vertical {
+  display: none;
+}
+
+
+/* activ */
+/* btn fio */
+
+.faq__item-btn_color_another:active {
+  background: transparent;
+}
+
+.faq__item-btn_color_another:active .faq__svg-path {
+  fill: white;
+}
+
+.faq__item-btn_color_another:active .faq__svg-path-vertical {
+  display: none;
+}
+
+
+/* focus */
+/* btn white */
+
+.faq__item-btn:focus {
+  background: transparent;
+}
+
+.faq__item-btn:focus .faq__svg-path {
+  fill: #440F51;
+}
+
+.faq__item-btn:focus .faq__svg-path-vertical {
+  display: none;
+}
+
+/* focus */
+/* btn fio */
+
+.faq__item-btn_color_another:focus {
+  background: transparent;
+}
+
+.faq__item-btn_color_another:focus .faq__svg-path {
+  fill: white;
+}
+
+.faq__item-btn_color_another:focus .faq__svg-path-vertical {
+  display: none;
+}
+

@@ -60,16 +60,28 @@
 }
 
 .contacts__network {
+  width: 280px;
   padding-top: 39px;
   display: flex;
+  flex-direction: row;
+justify-content: space-between;
 }
 
-.contacts__item {
-  margin-right: 28px;
+.contact__link {
+  width: 50px;
+  height: 50px;
 }
 
-.contacts__item:last-child {
-  margin-right: 0;
+.contact__link:hover .contacts__item-svg {
+  fill: #EADEED;
+}
+
+.contact__link:active .contacts__item-svg {
+  fill: #CD06FF;
+}
+
+.contact__link:focus .contacts__item-svg {
+  fill: #EADEED;
 }
 
 .contacts__block-all {
