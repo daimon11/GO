@@ -14,6 +14,19 @@
   bottom: 0;
 }
 
+
+/* .game-over__button-scroll::after {
+content: "";
+width: 99px;
+height: 99px;
+background: transparent;
+position: absolute;
+border: 1px solid #6C0287;
+top: -2px;
+left: -2px;
+opacity: 0.2;
+} */
+
 .game-over__button-scroll {
   display: block;
   width: 97px;
@@ -26,11 +39,24 @@
   left: 540px;
 }
 
+/* .game-over__cube-element {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-right: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  transform: rotate(45deg);
+  left: 37px;
+  bottom: 39px;
+} */
+
 .game-over__button-scroll:hover {
   background: white;
 }
 
-.game-over__button-scroll:hover .game-over__svg-rect {
+.game-over__button-scroll:hover .game-over__svg {
   fill: #6C0287;
 }
 
@@ -39,7 +65,11 @@
   border: none;
 }
 
-.game-over__button-scroll:active .game-over__svg-rect {
+.game-over__button-scroll:active .game-over__svg {
+  fill: white;
+}
+
+.game-over__button-scroll:active .game-over__svg {
   fill: white;
 }
 
@@ -48,9 +78,7 @@
   border: 1px solid #FFFFFF;
 }
 
-.game-over__button-scroll:active .game-over__svg-rect {
-  fill: white;
-}
+
 
 .game-over__title {
   font-size: 150px;
@@ -71,6 +99,7 @@
   align-items: flex-end;
   gap: 40px;
   margin-bottom: 150px;
+  width: 400px;
 }
 
 .game-over__title-block {
@@ -83,8 +112,7 @@
   align-items: center;
 }
 
-.game-over__discription-halls,
-.game-over__discription-gear {
+.game-over__discription {
   font-size: 30px;
   text-align: center;
 }
@@ -113,13 +141,16 @@
 }
 
 .game-over__button-booking {
+  display: block;
   width: 374px;
-  height: 80px;
   background-color: #6C0287;
   border: 0;
+  padding: 25px 0;
   font-weight: 700;
   font-size: 26px;
+  line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
   color: white;
   border-radius: 10px;
   box-shadow: 0 0 20px #6C0287;
@@ -130,7 +161,7 @@
 }
 
 .game-over__button-booking:active {
-  background-color: #640AA3;
+  background: #640AA3;
 }
 
 .game-over__button-booking:focus {

@@ -41,9 +41,13 @@
             </li>
           </ul>
         </nav>
-        <button type="submit" class="header__button-call">
-          Заказать звонок
-        </button>
+
+        <form class="header__call-form" action="https://jsonplaceholder.typicode.com/posts" method="POST"
+          target="_blank">
+          <button type="submit" class="header__button-call">
+            Заказать звонок
+          </button>
+        </form>
       </div>
     </div>
   </header>
@@ -62,26 +66,32 @@
           <div class="game-over__info-blocks">
             <div class="game-over__info-block">
               <p class="game-over__text-halls">4</p>
-              <p class="game-over__discription-halls">Тематических зала</p>
+              <p class="game-over__discription">Тематических зала</p>
             </div>
             <div class="game-over__info-block">
               <p class="game-over__text-gear" lang="en">new</p>
-              <p class="game-over__discription-gear">Новейшая аппаратура</p>
+              <p class="game-over__discription">Новейшая аппаратура</p>
             </div>
           </div>
-          <button class="game-over__button-booking">
+
+          <a href="#booking" class="game-over__button-booking">
             Забронировать
-          </button>
-          <button class="game-over__button-scroll">
-            <svg class="game-over__svg" width="97" height="97" viewBox="0 0 97 97" fill="none"
+            
+          </a>
+          
+          <a href="#accessories" class="game-over__button-scroll">
+
+            <!-- <div class="game-over__cube-element"></div> -->
+          <a href="#accessories" class="game-over__button-scroll">
+            <svg width="97" height="97" viewBox="0 0 97 97" fill="none"
               xmlns="http://www.w3.org/2000/svg">
-              <rect class="game-over__svg-rect" x="34.4255" y="43.9161" width="1.82001" height="20.0201"
+              <rect class="game-over__svg" x="34.4255" y="43.9161" width="1.82001" height="20.0201"
                 transform="rotate(-44.9975 34.4255 43.9161)" fill="white" />
-              <rect class="game-over__svg-rect" x="48.5807" y="58.0737" width="1.82001" height="20.0201"
+              <rect class="game-over__svg" x="48.5807" y="58.0737" width="1.82001" height="20.0201"
                 transform="rotate(-134.997 48.5807 58.0737)" fill="white" />
             </svg>
 
-          </button>
+          </a>
 
         </div>
       </div>
@@ -183,19 +193,19 @@
               <ul class="booking__halls-list">
                 <li class="booking__item-hall">
                   <label class="booking__label-radio">
-                    <input class="booking__radio  visually-hidden" type="radio" name="halls" value="80's vibes">
+                    <input class="visually-hidden" type="radio" name="halls" value="80's vibes">
                     <span class="booking__span-radio-btn" lang="en">80's vibes</span>
                   </label>
                 </li>
                 <li class="booking__item-hall">
                   <label class="booking__label-radio">
-                    <input class="booking__radio visually-hidden" type="radio" name="halls" value="star wars">
+                    <input class="visually-hidden" type="radio" name="halls" value="star wars">
                     <span class="booking__span-radio-btn" lang="en">star wars</span>
                   </label>
                 </li>
                 <li class="booking__item-hall">
                   <label class="booking__label-radio">
-                    <input class="booking__radio visually-hidden" type="radio" name="halls" value="wild test">
+                    <input class="visually-hidden" type="radio" name="halls" value="wild test">
                     <span class="booking__span-radio-btn" lang="en">
                       wild test
                     </span>
@@ -203,7 +213,7 @@
                 </li>
                 <li class="booking__item-hall">
                   <label class="booking__label-radio">
-                    <input class="booking__radio visually-hidden" type="radio" name="halls" value="neon style">
+                    <input class="visually-hidden" type="radio" name="halls" value="neon style">
                     <span class="booking__span-radio-btn" lang="en">
                       neon style
                     </span>
@@ -225,32 +235,32 @@
                   <ul class="booking__fun-list">
                     <li class="booking__item">
                       <label class="booking__label">
-                        <input class="booking__radio visually-hidden" type="radio" name="prefixes" value="ps">
-                        <span class="booking__span booking__span-radio">
+                        <input class="visually-hidden" type="radio" name="prefixes" value="ps">
+                        <span class="booking__span booking__span_radio">
                           Playstation
                         </span>
                       </label>
                     </li>
                     <li class="booking__item">
                       <label class="booking__label">
-                        <input class="booking__radio visually-hidden" type="radio" name="prefixes" value="sega">
-                        <span class="booking__span booking__span-radio">
+                        <input class="visually-hidden" type="radio" name="prefixes" value="sega">
+                        <span class="booking__span booking__span_radio">
                           Sega Mega Drive
                         </span>
                       </label>
                     </li>
                     <li class="booking__item">
                       <label class="booking__label">
-                        <input class="booking__radio visually-hidden" type="radio" name="prefixes" value="x-box">
-                        <span class="booking__span booking__span-radio">
+                        <input class="visually-hidden" type="radio" name="prefixes" value="x-box">
+                        <span class="booking__span booking__span_radio">
                           X-box One S
                         </span>
                       </label>
                     </li>
                     <li class="booking__item">
                       <label class="booking__label">
-                        <input class="booking__radio visually-hidden" type="radio" name="prefixes" value="dendy">
-                        <span class="booking__span booking__span-radio">
+                        <input class="visually-hidden" type="radio" name="prefixes" value="dendy">
+                        <span class="booking__span booking__span_radio">
                           Dendy
                         </span>
                       </label>
@@ -265,36 +275,36 @@
                   <ul class="booking__fun-list">
                     <li class="booking__item">
                       <label class="booking__label">
-                        <input class="booking__checkbox visually-hidden" type="checkbox" name="table-games"
+                        <input class="visually-hidden" type="checkbox" name="table-games"
                           value="janga">
-                        <span class="booking__span booking__span-checkbox">
+                        <span class="booking__span booking__span_checkbox">
                           Janga
                         </span>
                       </label>
                     </li>
                     <li class="booking__item">
                       <label class="booking__label">
-                        <input class="booking__checkbox visually-hidden" type="checkbox" name="table-games"
+                        <input class="visually-hidden" type="checkbox" name="table-games"
                           value="monopoly">
-                        <span class="booking__span booking__span-checkbox">
+                        <span class="booking__span booking__span_checkbox">
                           Monopoly
                         </span>
                       </label>
                     </li>
                     <li class="booking__item">
                       <label class="booking__label">
-                        <input class="booking__checkbox visually-hidden" type="checkbox" name="table-games"
+                        <input class="visually-hidden" type="checkbox" name="table-games"
                           value="munchkin">
-                        <span class="booking__span booking__span-checkbox">
+                        <span class="booking__span booking__span_checkbox">
                           Манчкин
                         </span>
                       </label>
                     </li>
                     <li class="booking__item">
                       <label class="booking__label">
-                        <input class="booking__checkbox visually-hidden" type="checkbox" name="table-games"
+                        <input class="visually-hidden" type="checkbox" name="table-games"
                           value="alias">
-                        <span class="booking__span booking__span-checkbox">
+                        <span class="booking__span booking__span_checkbox">
                           Alias
                         </span>
                       </label>
@@ -309,17 +319,17 @@
                   <ul class="booking__fun-list">
                     <li class="booking__item">
                       <label class="booking__label">
-                        <input class="booking__checkbox visually-hidden" type="checkbox" name="additionally"
+                        <input class="visually-hidden" type="checkbox" name="additionally"
                           value="Karaoke">
-                        <span class="booking__span booking__span-checkbox">
+                        <span class="booking__span booking__span_checkbox">
                           Караоке
                         </span>
                       </label>
                     </li>
                     <li class="booking__item">
                       <label class="booking__label">
-                        <input class="booking__checkbox visually-hidden" type="checkbox" name="additionally" value="VR">
-                        <span class="booking__span booking__span-checkbox">
+                        <input class="visually-hidden" type="checkbox" name="additionally" value="VR">
+                        <span class="booking__span booking__span_checkbox">
                           VR
                         </span>
                       </label>
@@ -341,20 +351,20 @@
                   <li class="booking__item-date">
 
                     <div class="booking__data-block">
-                      <label class="booking__label booking__label-date">
-                        <input class="booking__input booking__input-date-time" placeholder="Дата" type="text"
+                      <label class="booking__label">
+                        <input class="booking__input" placeholder="Дата" type="text"
                           onfocus="(this.type = 'date')" onblur="(this.type='text')" name="booking_day" required>
                       </label>
-                      <label class="booking__label booking__label-date">
-                        <input class="booking__input booking__input-date-time" placeholder="Время" type="text"
+                      <label class="booking__label">
+                        <input class="booking__input" placeholder="Время" type="text"
                           onfocus="(this.type = 'time')" onblur="(this.type='text')" name="booking_time" required>
                       </label>
                     </div>
                   </li>
 
                   <li class="booking__item-date">
-                    <label class="booking__label booking__label-date">
-                      <input class="booking__input booking__input-date-time" placeholder="Сколько человек" type="text"
+                    <label class="booking__label">
+                      <input class="booking__input" placeholder="Сколько человек" type="text"
                         onfocus="(this.type = 'number')" onblur="(this.type='text')" name="booking_numbers" required>
                     </label>
                   </li>
@@ -483,10 +493,10 @@
             <button class="faq__item-btn">
               <svg class="faq__svg" width="46" height="46" viewBox="0 0 46 46" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path class="faq__svg-path faq__svg-path-vertical"
-                  d="M22.8305 14H23.5085V34H22.8305V14Z" fill="#440F51" />
-                <path class="faq__svg-path faq__svg-path-horizontal"
-                  d="M13 24.1695V23.4915H33V24.1695H13Z" fill="#440F51" />
+                <path class="faq__svg-path faq__svg-path-vertical" d="M22.8305 14H23.5085V34H22.8305V14Z"
+                  fill="#440F51"/>
+                <path class="faq__svg-path faq__svg-path-horizontal" d="M13 24.1695V23.4915H33V24.1695H13Z"
+                  fill="#440F51"/>
               </svg>
             </button>
           </li>
@@ -496,10 +506,10 @@
             <button class="faq__item-btn faq__item-btn_color_another">
               <svg class="faq__svg" width="46" height="46" viewBox="0 0 46 46" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path class="faq__svg-path faq__svg-path-vertical"
-                  d="M22.8305 14H23.5085V34H22.8305V14Z" fill="white" />
-                <path class="faq__svg-path faq__svg-path-horizontal"
-                  d="M13 24.1695V23.4915H33V24.1695H13Z" fill="white" />
+                <path class="faq__svg-path faq__svg-path-vertical" d="M22.8305 14H23.5085V34H22.8305V14Z"
+                  fill="white" />
+                <path class="faq__svg-path faq__svg-path-horizontal" d="M13 24.1695V23.4915H33V24.1695H13Z"
+                  fill="white" />
               </svg>
             </button>
           </li>
@@ -509,10 +519,10 @@
             <button class="faq__item-btn">
               <svg class="faq__svg" width="46" height="46" viewBox="0 0 46 46" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path class="faq__svg-path faq__svg-path-vertical"
-                  d="M22.8305 14H23.5085V34H22.8305V14Z" fill="#440F51" />
-                <path class="faq__svg-path faq__svg-path-horizontal"
-                  d="M13 24.1695V23.4915H33V24.1695H13Z" fill="#440F51" />
+                <path class="faq__svg-path faq__svg-path-vertical" d="M22.8305 14H23.5085V34H22.8305V14Z"
+                  fill="#440F51" />
+                <path class="faq__svg-path faq__svg-path-horizontal" d="M13 24.1695V23.4915H33V24.1695H13Z"
+                  fill="#440F51" />
               </svg>
             </button>
           </li>
@@ -522,10 +532,10 @@
             <button class="faq__item-btn faq__item-btn_color_another">
               <svg class="faq__svg" width="46" height="46" viewBox="0 0 46 46" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path class="faq__svg-path faq__svg-path-vertical"
-                  d="M22.8305 14H23.5085V34H22.8305V14Z" fill="white" />
-                <path class="faq__svg-path faq__svg-path-horizontal"
-                  d="M13 24.1695V23.4915H33V24.1695H13Z" fill="white" />
+                <path class="faq__svg-path faq__svg-path-vertical" d="M22.8305 14H23.5085V34H22.8305V14Z"
+                  fill="white" />
+                <path class="faq__svg-path faq__svg-path-horizontal" d="M13 24.1695V23.4915H33V24.1695H13Z"
+                  fill="white" />
               </svg>
             </button>
           </li>
@@ -534,10 +544,10 @@
             <button class="faq__item-btn">
               <svg class="faq__svg" width="46" height="46" viewBox="0 0 46 46" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
-                <path class="faq__svg-path faq__svg-path-vertical"
-                  d="M22.8305 14H23.5085V34H22.8305V14Z" fill="#440F51" />
-                <path class="faq__svg-path faq__svg-path-horizontal"
-                  d="M13 24.1695V23.4915H33V24.1695H13Z" fill="#440F51" />
+                <path class="faq__svg-path faq__svg-path-vertical" d="M22.8305 14H23.5085V34H22.8305V14Z"
+                  fill="#440F51" />
+                <path class="faq__svg-path faq__svg-path-horizontal" d="M13 24.1695V23.4915H33V24.1695H13Z"
+                  fill="#440F51" />
               </svg>
             </button>
           </li>
