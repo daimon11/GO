@@ -50,37 +50,47 @@
 }
 
 .booking__item-hall {
+  box-sizing: border-box;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
   color: #000000;
-  height: 55px;
 }
 
 .booking__span-radio-btn {
   padding: 8px 15px;
+  border: 3px solid #FFFFFF;
   width: 250px;
   background: #FFFFFF;
   border-radius: 8px;
 }
 
 .booking__span-radio-btn:hover {
-  padding: 5px 12px;
   border: 3px solid #640AA3;
   background: #EADEED;
+  transition-duration: 0.5s;
 }
 
 .visually-hidden:active+.booking__span-radio-btn {
-  padding: 8px 15px;
+  border: 3px solid #EADEED;
   background-color: #EADEED;
-  border: none;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.visually-hidden:checked+.booking__span-radio-btn {
+  border: 3px solid #EADEED;
+  background-color: #EADEED;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .visually-hidden:focus+.booking__span-radio-btn {
-  padding: 5px 12px;
-  background-color: white;
   border: 3px solid #640AA3;
+  background-color: white;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
 }
 
 .booking__item-date {
@@ -160,6 +170,10 @@
 }
 
 .visually-hidden:focus+.booking__span_radio::after {
+  opacity: 1;
+}
+
+.visually-hidden:checked+.booking__span_radio::after {
   opacity: 1;
 }
 
@@ -256,15 +270,15 @@
 
 .booking__btn {
   width: 300px;
-  height: 60px;
   background: #FFFFFF;
   color: #6C0287;
+  border: 3px solid #FFFFFF;
   border-radius: 10px;
-  border: 0;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
+  padding: 16px 50px;
   margin-right: 0;
   align-self: flex-end;
 }
@@ -272,14 +286,19 @@
 .booking__btn:hover {
   border: 3px solid #6C0287;
   background: #EADEED;
+  transition-duration: 0.5s;
 }
 
 .booking__btn:active {
-  border: none;
+  border: 3px solid #EADEED;
   background: #EADEED;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .booking__btn:focus {
   border: 3px solid #6C0287;
   background: white;
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
 }

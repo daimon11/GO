@@ -1,6 +1,5 @@
 .accessories__title {
   width: 800px;
-  ;
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
@@ -9,16 +8,23 @@
   margin: 0 auto 40px auto;
 }
 
-.accessories__item {
-  display: block;
-}
-
 .accessories__list {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-between;
   gap: 40px 0;
+}
+
+.accessories__item {
+  display: block;
+}
+
+.accessories__item:hover .accessories__img {
+transform: scale(1.1);
+box-shadow: 0 0 10px whitesmoke;
+transition-duration: 0.5s;
+transition-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .accessories__figure {

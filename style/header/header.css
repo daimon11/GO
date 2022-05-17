@@ -36,17 +36,22 @@ background-color: #1b1a1b;
 
 .header__button-call:hover {
 background-color: #6C0287;
-border: none;
+border: 3px solid #6C0287;
+transition-duration: 0.5s;
 }
 
 .header__button-call:active {
 background-color: #640AA3;
 border: none;
+transition-duration: 0.5s;
+transition-timing-function: ease-in-out;
 }
 
 .header__button-call:focus {
 background-color: #6C0287;
 border: none;
+transition-duration: 1s;
+transition-timing-function: ease-in;
 }
 
 

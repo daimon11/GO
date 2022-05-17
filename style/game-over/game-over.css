@@ -14,71 +14,36 @@
   bottom: 0;
 }
 
-
-/* .game-over__button-scroll::after {
-content: "";
-width: 99px;
-height: 99px;
-background: transparent;
-position: absolute;
-border: 1px solid #6C0287;
-top: -2px;
-left: -2px;
-opacity: 0.2;
-} */
-
 .game-over__button-scroll {
+  box-sizing: border-box;
+  border: 1px solid transparent;
   display: block;
-  width: 97px;
-  height: 97px;
-  background: none;
-  border: 1px solid #FFFFFF;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-image: url(../game-over/img/but-down.svg);
+  background-repeat: no-repeat;
   position: absolute;
   bottom: 90px;
   left: 540px;
 }
 
-/* .game-over__cube-element {
-  display: block;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border-right: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
-  transform: rotate(45deg);
-  left: 37px;
-  bottom: 39px;
-} */
-
 .game-over__button-scroll:hover {
-  background: white;
-}
-
-.game-over__button-scroll:hover .game-over__svg {
-  fill: #6C0287;
+  background-image: url(../game-over/img/but-down_hover.svg);
+  transition-duration: 0.5s;
 }
 
 .game-over__button-scroll:active {
-  background: #6C0287;
-  border: none;
-}
-
-.game-over__button-scroll:active .game-over__svg {
-  fill: white;
-}
-
-.game-over__button-scroll:active .game-over__svg {
-  fill: white;
+  background-image: url(../game-over/img/but-down_activ.svg);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .game-over__button-scroll:focus {
-  background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #CD06FF;
+  background-image: url(../game-over/img/but-down.svg);
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
 }
-
-
 
 .game-over__title {
   font-size: 150px;
@@ -158,12 +123,15 @@ opacity: 0.2;
 
 .game-over__button-booking:hover {
   background-color: #840AA3;
+  transition-duration: 0.5s;
 }
 
 .game-over__button-booking:active {
   background: #640AA3;
+  transition-duration: 0.5s;
 }
 
 .game-over__button-booking:focus {
   background-color: #840AA3;
+  transition-duration: 1s;
 }
