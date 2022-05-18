@@ -13,11 +13,19 @@
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-between;
-  gap: 40px 0;
 }
 
 .accessories__item {
   display: block;
+  margin-top: 0;
+}
+
+.accessories__figure__indent_top {
+  margin-top: 70px;
+}
+
+.accessories__figure__indent_bottom {
+  /* margin-bottom: -30px; */
 }
 
 .accessories__item:hover .accessories__img {

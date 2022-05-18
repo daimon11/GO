@@ -15,7 +15,7 @@
   font-size: 24px;
   line-height: 28px;
   vertical-align: middle;
-  padding: 20px 70px;
+  padding: 30px 70px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
@@ -31,7 +31,7 @@
   font-size: 24px;
   line-height: 28px;
   vertical-align: middle;
-  padding: 20px 70px;
+  padding: 30px 70px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
@@ -52,7 +52,6 @@
   background-image: url("../faq/icons/faq__open-icon-1.svg");
   background-size: contain;
   right: 70px;
-  top: 25%;
   cursor: pointer;
 }
 
@@ -65,7 +64,6 @@
   background-image: url("../faq/icons/faq__open-icon-2.svg");
   background-size: contain;
   right: 70px;
-  top: 25%;
   cursor: pointer;
 }
 
