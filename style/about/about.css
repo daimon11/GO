@@ -42,7 +42,7 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 50px;
-  color: #6C0287;
+  color: var(--before_after_color);
   margin-right: 36px;
 }
 
@@ -53,7 +53,7 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 50px;
-  color: #6C0287;
+  color: var(--before_after_color);
   margin-left: 15px;
 }
 

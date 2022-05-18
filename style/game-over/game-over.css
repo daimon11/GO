@@ -121,13 +121,13 @@
 }
 
 .game-over__button-booking:hover {
-  background-color: #840AA3;
+  background-color: var(--button-bg_color-hover);
 }
 
 .game-over__button-booking:active {
-  background: #640AA3;
+  background: var(--button_bg_color-active);
 }
 
 .game-over__button-booking:focus {
-  background-color: #840AA3;
+  background-color: var(--button-bg_color-hover);
 }
