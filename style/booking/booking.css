@@ -138,15 +138,15 @@
   position: relative;
 }
 
-.booking__span_radio {
+.booking__span_indent_s {
   padding-left: 39px;
 }
 
-.booking__span_checkbox {
+.booking__span_indent_xl {
   padding-left: 45px;
 }
 
-.booking__span_radio::before {
+.booking__span_indent_s::before {
   content: "";
   position: absolute;
   width: 27px;
@@ -157,7 +157,7 @@
   left: 0;
 }
 
-.booking__span_radio::after {
+.booking__span_indent_s::after {
   content: "";
   position: absolute;
   background: none;
@@ -169,15 +169,16 @@
   opacity: 0;
 }
 
-.visually-hidden:focus+.booking__span_radio::after {
+.visually-hidden:focus+.booking__span_indent_s::after {
   opacity: 1;
 }
 
-.visually-hidden:checked+.booking__span_radio::after {
-  opacity: 1;
+.visually-hidden:checked+.booking__span_indent_s::before {
+  border: 8px solid #6C0287;
+  border-radius: 50%;
 }
 
-.booking__span_checkbox::before {
+.booking__span_indent_xl::before {
   content: "";
   position: absolute;
   width: 27px;
@@ -188,7 +189,7 @@
   opacity: 1;
 }
 
-.booking__span_checkbox::after {
+.booking__span_indent_xl::after {
   content: "";
   position: absolute;
   width: 33px;
@@ -200,12 +201,12 @@
   opacity: 0;
 }
 
-.visually-hidden:focus+.booking__span_checkbox::after {
+.visually-hidden:focus+.booking__span_indent_xl::after {
   opacity: 1;
 }
 
-.visually-hidden:checked+.booking__span_checkbox::after {
-  opacity: 1;
+.visually-hidden:checked+.booking__span_indent_xl::before {
+  border: 8px solid #6C0287;
 }
 
 .booking__span-date {
