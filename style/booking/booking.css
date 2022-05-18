@@ -64,32 +64,30 @@
   width: 250px;
   background: #FFFFFF;
   border-radius: 8px;
+  transition-duration: 0.5s;
 }
 
 .booking__span-radio-btn:hover {
   border: 3px solid #640AA3;
   background: #EADEED;
-  transition-duration: 0.5s;
+
 }
 
 .visually-hidden:active+.booking__span-radio-btn {
   border: 3px solid #EADEED;
   background-color: #EADEED;
-  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
 .visually-hidden:checked+.booking__span-radio-btn {
   border: 3px solid #EADEED;
   background-color: #EADEED;
-  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
 .visually-hidden:focus+.booking__span-radio-btn {
   border: 3px solid #640AA3;
   background-color: white;
-  transition-duration: 1s;
   transition-timing-function: ease-in-out;
 }
 
@@ -282,18 +280,17 @@
   padding: 16px 50px;
   margin-right: 0;
   align-self: flex-end;
+  transition-duration: 0.5s;
 }
 
 .booking__btn:hover {
   border: 3px solid #6C0287;
   background: #EADEED;
-  transition-duration: 0.5s;
 }
 
 .booking__btn:active {
   border: 3px solid #EADEED;
   background: #EADEED;
-  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
@@ -301,5 +298,4 @@
   border: 3px solid #6C0287;
   background: white;
   transition-timing-function: ease-in;
-  transition-duration: 1s;
 }

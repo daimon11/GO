@@ -25,24 +25,22 @@
   position: absolute;
   bottom: 90px;
   left: 540px;
+  transition-duration: 0.5s;
 }
 
 .game-over__button-scroll:hover {
   background-image: url(../game-over/img/but-down_hover.svg);
-  transition-duration: 0.5s;
 }
 
 .game-over__button-scroll:active {
   background-image: url(../game-over/img/but-down_activ.svg);
-  transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 
 .game-over__button-scroll:focus {
-  border: 1px solid #CD06FF;
+  border: 1px solid var(--individ-elements_color);
   background-image: url(../game-over/img/but-down.svg);
   transition-timing-function: ease-in;
-  transition-duration: 1s;
 }
 
 .game-over__title {
@@ -91,14 +89,14 @@
 }
 
 .game-over__text-halls {
-  color: #CD06FF;
+  color: var(--individ-elements_color);
   font-size: 100px;
   font-weight: 900;
   line-height: 141px;
 }
 
 .game-over__text-gear {
-  color: #CD06FF;
+  color: var(--individ-elements_color);
   font-weight: 900;
   font-size: 75px;
   font-variant: small-caps;
@@ -108,7 +106,7 @@
 .game-over__button-booking {
   display: block;
   width: 374px;
-  background-color: #6C0287;
+  background-color: var(--button_bg_color);
   border: 0;
   padding: 25px 0;
   font-weight: 700;
@@ -118,20 +116,18 @@
   text-align: center;
   color: white;
   border-radius: 10px;
-  box-shadow: 0 0 20px #6C0287;
+  box-shadow: 0 0 20px var(--button_bg_color);
+  transition-duration: 0.5s;
 }
 
 .game-over__button-booking:hover {
   background-color: #840AA3;
-  transition-duration: 0.5s;
 }
 
 .game-over__button-booking:active {
   background: #640AA3;
-  transition-duration: 0.5s;
 }
 
 .game-over__button-booking:focus {
   background-color: #840AA3;
-  transition-duration: 1s;
 }

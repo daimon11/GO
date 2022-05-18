@@ -21,9 +21,9 @@
   flex-direction: column;
 }
 
-.contacts_position_center {
-display: flex;
-align-items: center;
+.contacts__address_position_center {
+  display: flex;
+  align-items: center;
 }
 
 .contacts__tel,
@@ -68,7 +68,7 @@ align-items: center;
   padding-top: 39px;
   display: flex;
   flex-direction: row;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
 .contacts__item {
@@ -76,25 +76,27 @@ justify-content: space-between;
   height: 50px;
 }
 
+.contacts__icon-logo {
+  transition-duration: 0.5s;
+}
+
 .contacts__item:hover .contacts__icon-logo {
   fill: #EADEED;
-  transition-duration: 0.5s;
 }
 
 .contacts__item:active .contacts__icon-logo {
   fill: #CD06FF;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
+
   transition-timing-function: ease-in-out;
 }
 
 .contacts__item:focus {
   border: 1px solid #CD06FF;
-  transition-duration: 1s;
 }
 
 .contacts__item:focus .contacts__icon-logo {
   fill: #EADEED;
-  transition-duration: 1s;
   transition-timing-function: ease-in;
 }
 

@@ -10,29 +10,30 @@
 
 .accessories__list {
   display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .accessories__item {
-  display: block;
-  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
 }
 
-.accessories__figure__indent_top {
-  margin-top: 70px;
+.accessories__item:nth-child(even) {
+  padding-top: 70px;
 }
 
-.accessories__figure__indent_bottom {
-  /* margin-bottom: -30px; */
+.accessories__figure {
+  transition: 0.5s;
 }
 
-.accessories__item:hover .accessories__img {
-transform: scale(1.1);
-box-shadow: 0 0 10px whitesmoke;
-transition-duration: 0.5s;
-transition-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+.accessories__figure:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px whitesmoke;
+  transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  z-index: 1;
 }
 
 .accessories__figure {

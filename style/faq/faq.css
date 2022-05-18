@@ -53,6 +53,7 @@
   background-size: contain;
   right: 70px;
   cursor: pointer;
+  transition-duration: 0.5s;
 }
 
 .faq__item:nth-child(even)::after {
@@ -65,26 +66,24 @@
   background-size: contain;
   right: 70px;
   cursor: pointer;
+  transition-duration: 0.5s;
 }
 
 .faq__item:nth-child(odd):hover::after {
   background-image: url("../faq/icons/faq__open-icon-1_hover.svg");
-  transition-duration: 0.5s;
+
 }
 
 .faq__item:nth-child(even):hover::after {
   background-image: url("../faq/icons/faq__open-icon-2_hover.svg");
-  transition-duration: 0.5s;
 }
 
 .faq__item:nth-child(odd):active::after {
   background-image: url("../faq/icons/faq__open-icon-1_activ.svg");
-  transition-duration: 0.5s;
-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 .faq__item:nth-child(even):active::after {
   background-image: url("../faq/icons/faq__open-icon-2_activ.svg");
-  transition-duration: 0.5s;
-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
