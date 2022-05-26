@@ -104,3 +104,14 @@
   justify-content: space-between;
   margin-bottom: 166px;
 }
+
+.contacts__info-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__info-span, .contacts__autor-address {
+  font-weight: 400;
+font-size: 14px;
+font-style: normal;
+}
