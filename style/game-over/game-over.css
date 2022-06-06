@@ -21,10 +21,11 @@
   width: 100px;
   height: 100px;
   background-image: url(../game-over/img/but-down.svg);
+  background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   bottom: 90px;
-  left: 540px;
+  left: 538px;
   transition-duration: 0.5s;
 }
 
@@ -49,10 +50,12 @@
   font-weight: 800;
   line-height: 100%;
   letter-spacing: -0.1em;
+  z-index: -2;
 }
 
 .game-over__title-discription {
   padding-left: 100px;
+  padding-top: 10px;
   font-weight: 400;
   font-size: 28px;
 }
@@ -62,11 +65,11 @@
   align-items: flex-end;
   gap: 40px;
   margin-bottom: 150px;
-  width: 400px;
+  max-width: 400px;
 }
 
 .game-over__title-block {
-  margin-bottom: 30px;
+  margin-bottom: 37px;
 }
 
 .game-over__info-block {
@@ -104,11 +107,10 @@
 }
 
 .game-over__button-booking {
-  display: block;
-  width: 374px;
+  display: inline-block;
   background-color: var(--button_bg_color);
   border: 0;
-  padding: 25px 0;
+  padding: 25px 69px;
   font-weight: 700;
   font-size: 26px;
   line-height: 30px;
@@ -130,4 +132,208 @@
 
 .game-over__button-booking:focus {
   background-color: var(--button-bg_color-hover);
+}
+
+@media (max-width: 1150px) {
+  .game-over {
+    padding-top: 30px;
+  }
+
+  .game-over__wrapper {
+    height: 583px;
+  }
+
+  .game-over__wrapper::before {
+    width: 453px;
+    height: 520px;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+  }
+
+  .game-over__title {
+    font-size: 120px;
+    line-height: 100%;
+    margin-bottom: 11px;
+  }
+
+  .game-over__title-discription {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .game-over__title-block {
+    margin-bottom: 29px;
+  }
+
+  .game-over__info-blocks {
+    gap: 49px;
+    max-width: 170px;
+    margin-bottom: 80px;
+  }
+
+  .game-over__text-halls {
+    font-size: 80px;
+    line-height: 113px;
+  }
+
+  .game-over__text-gear {
+    font-size: 60px;
+    line-height: 85px;
+  }
+
+  .game-over__discription {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .game-over__info-block:last-child {
+    margin-left: -8px;
+  }
+
+  .game-over__button-booking {
+    padding: 17px 48px;
+    font-size: 22px;
+    line-height: 30px;
+    margin-left: 40px;
+  }
+
+  .game-over__button-scroll {
+    width: 67px;
+    height: 67px;
+    bottom: 46px;
+    left: 418px;
+  }
+}
+
+@media (max-width: 960px) {
+  .game-over {
+    padding-top: 29px;
+  }
+
+  .game-over__wrapper {
+    height: 537px;
+  }
+
+  .game-over__title-block {
+    margin-bottom: 51px;
+  }
+
+  .game-over__title {
+    font-size: 86px;
+    line-height: 100%;
+    padding-left: 3px;
+  }
+
+  .game-over__title-discription {
+    padding-top: 9px;
+    padding-left: 70px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .game-over__text-halls {
+    font-size: 50px;
+    line-height: 71px;
+  }
+
+  .game-over__text-gear {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .game-over__discription {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .game-over__info-blocks {
+    gap: 36px;
+    margin-bottom: 100px;
+    max-width: 222px;
+  }
+
+  .game-over__button-booking {
+    position: relative;
+    padding: 11px 35px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    z-index: 2;
+  }
+
+  .game-over__wrapper::before {
+    width: 424px;
+    height: 479px;
+    background-position: bottom right;
+    background-size: cover;
+  }
+
+  .game-over__button-scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .game-over {
+    padding-top: 19px;
+  }
+
+  .game-over__wrapper {
+    height: 204px;
+  }
+
+  .game-over__wrapper::before {
+    width: 161px;
+    height: 179px;
+    background-position: bottom right;
+    background-size: contain;
+  }
+
+  .game-over__title {
+    font-size: 35px;
+    line-height: 100%;
+    margin-bottom: 6px;
+    padding-left: 1px;
+    letter-spacing: -0.08em;
+  }
+
+  .game-over__title-discription {
+    padding: 0;
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 20px;
+  }
+
+  .game-over__title-block {
+    margin-bottom: 10px;
+  }
+
+  .game-over__text-halls {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .game-over__text-gear {
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .game-over__discription {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .game-over__info-blocks {
+    max-width: 140px;
+    gap: 28px;
+    margin-bottom: 30px;
+  }
+
+  .game-over__button-booking {
+    padding: 8px 13px;
+    font-size: 10px;
+    line-height: 12px;
+    border-radius: 4px;
+  }
 }

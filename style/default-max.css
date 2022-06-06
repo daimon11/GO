@@ -16,8 +16,10 @@ body {
   /* указать шрифт под проект*/
   font-size: 16px;
   font-weight: 400;
-  color: #ffffff; /*цвет под ваш проект*/
-  background-color: #1b1a1b; /*цвет под ваш проект*/
+  color: #ffffff;
+  /*цвет под ваш проект*/
+  background-color: #1b1a1b;
+  /*цвет под ваш проект*/
 }
 
 img {
@@ -36,7 +38,9 @@ a {
   color: inherit;
 }
 
-ul, ol, fieldset {
+ul,
+ol,
+fieldset {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -57,7 +61,7 @@ figure {
 }
 
 iframe,
-input, 
+input,
 fieldset {
   border: 0 none;
 }
@@ -107,6 +111,27 @@ textarea {
   margin: 0 auto;
 }
 
+@media (max-width: 1150px) {
+  .container {
+    max-width: 984px;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  .container {
+    max-width: 728px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    max-width: 320px;
+    padding: 0 20px;
+  }
+}
+
 /*
 У секции добавляю вертикальные паддинги,
 это половина от расстояния между блоками
@@ -118,11 +143,73 @@ footer {
   padding: 50px 0;
 }
 
+@media (max-width: 1150px) {
+  section,
+  article,
+  footer {
+    padding: 35px 0;
+  }
+}
+
+@media (max-width: 960px) {
+
+  section,
+  article,
+  footer {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 650px) {
+
+  section,
+  article,
+  footer {
+    padding: 23px 0;
+  }
+}
+
+.title {
+  width: 800px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 46px auto;
+}
+
+@media (max-width: 1150px) {
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 555px;
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 960px) {
+  .title {
+    max-width: 440px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .title {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+}
+
 .page__background {
   position: absolute;
   width: 100%;
   height: 629px;
-  margin: 0 -130;
   bottom: 0;
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
   z-index: -1;

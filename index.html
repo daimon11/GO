@@ -19,7 +19,7 @@
     <div class="container">
       <div class="header-wrapper">
         <div class="header__logo">
-          <img class="header__logo-img" src="./style/header/img/header-logo.svg" alt="logo">
+          <img class="header__logo-img" src="./style/header/img/header-logo_go.svg" alt="logo">
         </div>
         <nav class="menu" id="menu">
           <h2 class="visually-hidden">Меню</h2>
@@ -42,7 +42,7 @@
           </ul>
         </nav>
 
-        <button type="reset" class="header__button-call">
+        <button type="button" class="header__button-call">
           Заказать звонок
         </button>
       </div>
@@ -84,31 +84,35 @@
 
     <section class="accessories" id="accessories">
       <div class="container">
-        <h2 class="accessories__title">У нас есть все для классного отдыха с друзьями!</h2>
+        <h2 class="title accessories__title">У нас есть все для классного отдыха с друзьями!</h2>
         <ul class="accessories__list">
 
-          <li class="accessories__item">
+          <li class="accessories__item accessories__item_position_left">
             <figure class="accessories__figure">
               <img class="accessories__img" src="./style/accessories/img/accessories-vr.jpg" alt="VR очки">
               <figcaption class="accessories__img-text">VR очки
               </figcaption>
             </figure>
+          </li>
 
+          <li class="accessories__item accessories__item_position_center">
             <figure class="accessories__figure">
               <img class="accessories__img" src="./style/accessories/img/accessories-audio.jpg" alt="Аудио-система 5.1">
-              <figcaption class="accessories__img-text">Аудио-система 5.1
+              <figcaption class="accessories__img-text">Аудио-система 5.1 <span class="text-wrap"></span>
                 с отличным звуком
               </figcaption>
             </figure>
           </li>
 
-          <li class="accessories__item">
+          <li class="accessories__item accessories__item_position_right">
             <figure class="accessories__figure">
               <img class="accessories__img" src="./style/accessories/img/accessories-micro.jpg" alt="Караоке">
               <figcaption class="accessories__img-text">Караоке (4 микрофона)
               </figcaption>
             </figure>
+          </li>
 
+          <li class="accessories__item accessories__item_position_left">
             <figure class="accessories__figure">
               <img class="accessories__img" src="./style/accessories/img/accessories-game.jpg" alt="Настольные игры">
               <figcaption class="accessories__img-text">Настольные игры
@@ -116,17 +120,19 @@
             </figure>
           </li>
 
-          <li class="accessories__item">
+          <li class="accessories__item accessories__item_position_center">
             <figure class="accessories__figure">
               <img class="accessories__img" src="./style/accessories/img/accessories-netflix.jpg" alt="Кино сервисы">
               <figcaption class="accessories__img-text">Кино сервисы Netflix, IVI,
                 MegoGo, КиноПоиск, Okko
               </figcaption>
             </figure>
+          </li>
 
+          <li class="accessories__item accessories__item_position_right">
             <figure class="accessories__figure">
               <img class="accessories__img" src="./style/accessories/img/accessories-sony.jpg" alt="Playstation 5">
-              <figcaption class="accessories__img-text">Playstation 5
+              <figcaption class="accessories__img-text">PlayStation 5
               </figcaption>
             </figure>
           </li>
@@ -138,7 +144,7 @@
 
     <section class="halls" id="halls">
       <div class="container">
-        <h2 class="halls__title">Наши залы</h2>
+        <h2 class="title halls__title">Наши залы</h2>
         <ol class="halls__list">
           <li class="halls__item halls__item_name_80s">
             80's
@@ -165,10 +171,10 @@
       <div class="container">
         <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" target="_blank">
 
-          <h3 class="booking__title">Забронировать залы просто</h3>
+          <h3 class="title booking__title">Забронировать зал просто</h3>
 
           <div class="booking__wrapper">
-            <fieldset>
+            <fieldset class="booking__fieldset">
               <legend class="booking__legend">Выбери зал</legend>
               <ul class="booking__halls-list">
                 <li class="booking__item-hall">
@@ -187,7 +193,7 @@
                   <label class="booking__label-radio">
                     <input class="visually-hidden" type="radio" name="halls" value="wild test">
                     <span class="booking__span-radio-btn" lang="en">
-                      wild test
+                      wild west
                     </span>
                   </label>
                 </li>
@@ -202,22 +208,22 @@
               </ul>
             </fieldset>
 
-            <fieldset class=" booking__fieldset">
+            <fieldset class="booking__fieldset">
               <legend class="booking__legend">
                 Собери набор развлечений
               </legend>
 
               <div class="booking__fun-block">
-                <fieldset class="">
+                <fieldset class="booking__fun-fieldset">
                   <legend class="booking__legend booking__legend_position_left">
-                    Приставки:
+                    Приставка:
                   </legend>
                   <ul class="booking__fun-list">
                     <li class="booking__item">
                       <label class="booking__label">
                         <input class="visually-hidden" type="radio" name="prefixes" value="ps">
                         <span class="booking__span booking__span_indent_s">
-                          Playstation
+                          PlayStation 5
                         </span>
                       </label>
                     </li>
@@ -248,11 +254,11 @@
                   </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="booking__fun-fieldset">
                   <legend class="booking__legend booking__legend_position_left">
                     Настольные игры:
                   </legend>
-                  <ul class="booking__fun-list">
+                  <ul class="booking__fun-list booking__fun-list_break_size_s">
                     <li class="booking__item">
                       <label class="booking__label">
                         <input class="visually-hidden" type="checkbox" name="table-games" value="janga">
@@ -288,11 +294,11 @@
                   </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="booking__fun-fieldset">
                   <legend class="booking__legend booking__legend_position_left">
                     Дополнительно:
                   </legend>
-                  <ul class="booking__fun-list">
+                  <ul class="booking__fun-list booking__fun-list_break_size_s">
                     <li class="booking__item">
                       <label class="booking__label">
                         <input class="visually-hidden" type="checkbox" name="additionally" value="Karaoke">
@@ -316,8 +322,8 @@
             </fieldset>
 
             <fieldset class="booking__fieldset">
-              <legend class="booking__legend">
-                Выбрери дату и время
+              <legend class="booking__legend booking__legend_indent_top">
+                Выбери дату и время
               </legend>
 
               <div class="booking__data-time-block">
@@ -339,14 +345,15 @@
 
                   <li class="booking__item-date">
                     <label class="booking__label">
-                      <input class="booking__input" placeholder="Сколько человек" type="text"
-                        onfocus="(this.type = 'number')" onblur="(this.type='text')" name="booking_numbers" required>
+                      <input class="booking__input booking__input_fixed_height" placeholder="Сколько человек"
+                        type="text" onfocus="(this.type = 'number')" onblur="(this.type='text')" name="booking_numbers"
+                        required>
                     </label>
                   </li>
 
                 </ul>
 
-                <ul class="booking__data-list">
+                <ul class="booking__data-list booking__data-list_width_s">
                   <li class="booking__item-date">
                     <label class="booking__label  booking__label_flex_column">
                       <span class="booking__span-date">
@@ -384,6 +391,7 @@
                   </li>
                 </ul>
               </div>
+
               <div class="booking__btn-block">
                 <button class="booking__btn" type="submit">
                   Забронировать
@@ -398,15 +406,15 @@
 
     <article class="about" id="about">
       <div class="container">
-        <h2 class="about__title">О нас</h2>
+        <h2 class="title about__title">О нас</h2>
         <div class="about__wrapper">
           <img class="about__photos" src="./style/about/img/all-img.jpg" alt="Тематические изображения">
           <p class="about__discription">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности 
             в центральной части города.
           </p>
-          <p class="about__discription">Каждый день мы стараемся создавать
-            для вас самую лучшую игровую атмосферу
-            и радовать Вас топовыми игровыми разработками <span class="text-wrap"></span>
+          <p class="about__discription">Каждый день мы стараемся создавать 
+            для вас самую лучшую игровую атмосферу 
+            и радовать Вас топовыми игровыми разработками <span class="about__text-wrap"></span>
             со всего мира.
           </p>
           <blockquote class="about__blockquote">
@@ -421,36 +429,36 @@
 
     <section class="reviews" id="reviews">
       <div class="container">
-        <h3 class="reviews__title">Отзывы посетителей</h3>
+        <h3 class="title reviews__title">Отзывы посетителей</h3>
         <ul class="reviews__list">
           <li class="reviews__item">
             <figure class="reviews__customer">
               <img class="reviews__photo" src="./style/reviews/img/rewiews-photo-man-1.jpg" alt="Фото Макса Самойлова">
-              <figcaption>Макс Самойлов</figcaption>
+              <figcaption class="reviews__user">Макс Самойлов</figcaption>
             </figure>
             <p class="reviews__discription">
               Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба,
-              никогда я еще не был в таком полном игровом погружении. Сервис на высоте!
+              никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
             </p>
           </li>
           <li class="reviews__item">
             <figure class="reviews__customer">
               <img class="reviews__photo reviews__photo_position_top" src="./style/reviews/img/rewiews-photo-man-2.jpg"
                 alt="Фото Оксны Григорьевой">
-              <figcaption>Оксана Григорьева</figcaption>
+              <figcaption class="reviews__user">Оксана Григорьева</figcaption>
             </figure>
             <p class="reviews__discription">
-              Были в компании Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
+              Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
               больше нет подобных заведений
             </p>
           </li>
           <li class="reviews__item">
             <figure class="reviews__customer">
-              <img class="reviews__photo" src="./style/reviews/img/rewiews-photo-man-3.jpg" alt="Фото Никиты Ященко">
-              <figcaption>Никита Ященко</figcaption>
+              <img class="reviews__photo reviews__photo_position_bottom" src="./style/reviews/img/rewiews-photo-man-3.jpg" alt="Фото Никиты Ященко">
+              <figcaption class="reviews__user">Никита Ященко</figcaption>
             </figure>
             <p class="reviews__discription">
-              Немного подвисала игра в VR очках, а так все очень норм. Крутое оформление комнаты в стиле звездных
+              Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных
               войн, попал в атмосферу космоса
             </p>
           </li>
@@ -461,13 +469,13 @@
 
     <section class="faq" id="faq">
       <div class="container">
-        <h3 class="faq__title">
+        <h3 class="title faq__title">
           Частые вопросы
         </h3>
         <ul class="faq__list">
 
           <li class="faq__item">
-            <p class="faq__paragraph">Можно ли Забронировать комнату онлайн?</p>
+            <p class="faq__paragraph">Можно ли забронировать комнату онлайн?</p>
           </li>
 
           <li class="faq__item">
@@ -481,6 +489,7 @@
           <li class="faq__item">
             <p class="faq__paragraph">Как получить VIP карту?</p>
           </li>
+          
           <li class="faq__item">
             <p class="faq__paragraph">Какая комната самая популярная?</p>
           </li>
@@ -492,24 +501,32 @@
 
   <footer class="contacts">
     <div class="container">
-      <h2 class="contacts__title">Контакты</h2>
+      <h2 class="title contacts__title">Контакты</h2>
       <div class="contacts__block-all">
         <div class="contacts__block-item">
           <address class="contacts__address">
             <p class="contacts__location">г. Москва
-              ул. Аквамарина, 16</p>
-            <a class="contacts__tel" href="tel:89509302893">8(950)930-28-93</a>
-            <a class="contacts__email" href="mailto:GameOver@gmail.com" target="_blank">GameOver@gmail.com</a>
+              ул. Аквамарина, 16
+            </p>
+
+            <div class="contacts__block-connection">
+              <a class="contacts__tel" href="tel:89509302893">8 (950) 930-28-93</a>
+              <a class="contacts__email" href="mailto:GameOver@gmail.com" target="_blank">
+                GameOver@gmail.com
+              </a>
+            </div>
           </address>
+
           <ul class="contacts__network">
             <li class="contacts__item">
-              <a class="contacts__link" href="https://www.instagram.com/" target="_blank">
-                <svg class="contacts__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+              <a class="contacts__link" href="https://vk.com/" target="_blank">
+                <svg class="contacts__icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path class="contacts__icon-logo"
-                    d="M31.5002 24C31.5002 25.9891 30.71 27.8968 29.3035 29.3033C27.8969 30.7098 25.9893 31.5 24.0002 31.5C22.011 31.5 20.1034 30.7098 18.6969 29.3033C17.2903 27.8968 16.5002 25.9891 16.5002 24C16.5002 23.5725 16.5452 23.155 16.6227 22.75H14.0002V32.7425C14.0002 33.4375 14.5627 34 15.2577 34H32.7452C33.0782 33.9993 33.3974 33.8666 33.6327 33.6308C33.868 33.395 34.0002 33.0756 34.0002 32.7425V22.75H31.3777C31.4552 23.155 31.5002 23.5725 31.5002 24ZM24.0002 29C24.6569 28.9998 25.3072 28.8703 25.914 28.6188C26.5207 28.3673 27.0719 27.9988 27.5362 27.5343C28.0005 27.0698 28.3688 26.5183 28.6199 25.9115C28.8711 25.3046 29.0003 24.6543 29.0002 23.9975C29 23.3407 28.8705 22.6904 28.619 22.0837C28.3675 21.477 27.999 20.9257 27.5344 20.4614C27.0699 19.9972 26.5185 19.6289 25.9116 19.3777C25.3048 19.1265 24.6544 18.9973 23.9977 18.9975C22.6712 18.9978 21.3993 19.5251 20.4616 20.4632C19.5239 21.4014 18.9973 22.6736 18.9977 24C18.998 25.3264 19.5252 26.5984 20.4634 27.5361C21.4015 28.4737 22.6737 29.0003 24.0002 29ZM30.0002 18.75H32.9977C33.1968 18.75 33.3878 18.6711 33.5289 18.5305C33.6699 18.3899 33.7495 18.1991 33.7502 18V15.0025C33.7502 14.8029 33.6709 14.6115 33.5298 14.4704C33.3886 14.3293 33.1972 14.25 32.9977 14.25H30.0002C29.8006 14.25 29.6092 14.3293 29.4681 14.4704C29.3269 14.6115 29.2477 14.8029 29.2477 15.0025V18C29.2502 18.4125 29.5877 18.75 30.0002 18.75ZM24.0002 0C17.635 0 11.5305 2.52856 7.02959 7.02944C2.52872 11.5303 0.000152588 17.6348 0.000152588 24C0.000152588 30.3652 2.52872 36.4697 7.02959 40.9706C11.5305 45.4714 17.635 48 24.0002 48C27.1519 48 30.2727 47.3792 33.1846 46.1731C36.0964 44.967 38.7421 43.1992 40.9707 40.9706C43.1993 38.742 44.9672 36.0962 46.1733 33.1844C47.3794 30.2726 48.0002 27.1517 48.0002 24C48.0002 20.8483 47.3794 17.7274 46.1733 14.8156C44.9672 11.9038 43.1993 9.25804 40.9707 7.02944C38.7421 4.80083 36.0964 3.033 33.1846 1.82689C30.2727 0.620778 27.1519 0 24.0002 0ZM36.5002 33.7225C36.5002 35.25 35.2502 36.5 33.7227 36.5H14.2777C12.7502 36.5 11.5002 35.25 11.5002 33.7225V14.2775C11.5002 12.75 12.7502 11.5 14.2777 11.5H33.7227C35.2502 11.5 36.5002 12.75 36.5002 14.2775V33.7225Z"
+                    d="M23.9999 0C10.7449 0 -0.000152588 10.745 -0.000152588 24C-0.000152588 37.255 10.7449 48 23.9999 48C37.2549 48 47.9999 37.255 47.9999 24C47.9999 10.745 37.2549 0 23.9999 0ZM33.2299 27.0775C33.2299 27.0775 35.3524 29.1725 35.8749 30.145C35.8899 30.165 35.8974 30.185 35.9024 30.195C36.1149 30.5525 36.1649 30.83 36.0599 31.0375C35.8849 31.3825 35.2849 31.5525 35.0799 31.5675H31.3299C31.0699 31.5675 30.5249 31.5 29.8649 31.045C29.3574 30.69 28.8574 30.1075 28.3699 29.54C27.6424 28.695 27.0124 27.965 26.3774 27.965C26.2967 27.9649 26.2165 27.9775 26.1399 28.0025C25.6599 28.1575 25.0449 28.8425 25.0449 30.6675C25.0449 31.2375 24.5949 31.565 24.2774 31.565H22.5599C21.9749 31.565 18.9274 31.36 16.2274 28.5125C12.9223 25.025 9.94735 18.03 9.92235 17.965C9.73485 17.5125 10.1223 17.27 10.5448 17.27H14.3323C14.8373 17.27 15.0023 17.5775 15.1174 17.85C15.2523 18.1675 15.7474 19.43 16.5599 20.85C17.8774 23.165 18.6849 24.105 19.3324 24.105C19.4538 24.1036 19.573 24.0727 19.6799 24.015C20.5249 23.545 20.3674 20.5325 20.3299 19.9075C20.3299 19.79 20.3274 18.56 19.8948 17.97C19.5849 17.5425 19.0574 17.38 18.7374 17.32C18.8669 17.1413 19.0375 16.9964 19.2348 16.8975C19.8148 16.6075 20.8599 16.565 21.8974 16.565H22.4749C23.5999 16.58 23.8899 16.6525 24.2974 16.755C25.1224 16.9525 25.1399 17.485 25.0674 19.3075C25.0449 19.825 25.0224 20.41 25.0224 21.1C25.0224 21.25 25.0149 21.41 25.0149 21.58C24.9899 22.5075 24.9599 23.56 25.6149 23.9925C25.7003 24.0461 25.799 24.0746 25.8999 24.075C26.1274 24.075 26.8124 24.075 28.6674 20.8925C29.2394 19.8681 29.7366 18.8037 30.1549 17.7075C30.1924 17.6425 30.3024 17.4425 30.4324 17.365C30.5283 17.3161 30.6347 17.2912 30.7424 17.2925H35.1949C35.6799 17.2925 36.0124 17.365 36.0749 17.5525C36.1849 17.85 36.0549 18.7575 34.0224 21.51L33.1149 22.7075C31.2724 25.1225 31.2724 25.245 33.2299 27.0775Z"
                     fill="white" />
                 </svg>
+
               </a>
             </li>
 
@@ -518,20 +535,22 @@
                 <svg class="contacts__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path class="contacts__icon-logo"
-                    d="M24.0001 0C10.7451 0 0.00012207 10.745 0.00012207 24C0.00012207 37.255 10.7451 48 24.0001 48C37.2551 48 48.0001 37.255 48.0001 24C48.0001 10.745 37.2551 0 24.0001 0ZM33.2301 27.0775C33.2301 27.0775 35.3526 29.1725 35.8751 30.145C35.8901 30.165 35.8976 30.185 35.9026 30.195C36.1151 30.5525 36.1651 30.83 36.0601 31.0375C35.8851 31.3825 35.2851 31.5525 35.0801 31.5675H31.3301C31.0701 31.5675 30.5251 31.5 29.8651 31.045C29.3576 30.69 28.8576 30.1075 28.3701 29.54C27.6426 28.695 27.0126 27.965 26.3776 27.965C26.297 27.9649 26.2168 27.9775 26.1401 28.0025C25.6601 28.1575 25.0451 28.8425 25.0451 30.6675C25.0451 31.2375 24.5951 31.565 24.2776 31.565H22.5601C21.9751 31.565 18.9276 31.36 16.2276 28.5125C12.9226 25.025 9.94762 18.03 9.92262 17.965C9.73512 17.5125 10.1226 17.27 10.5451 17.27H14.3326C14.8376 17.27 15.0026 17.5775 15.1176 17.85C15.2526 18.1675 15.7476 19.43 16.5601 20.85C17.8776 23.165 18.6851 24.105 19.3326 24.105C19.454 24.1036 19.5733 24.0727 19.6801 24.015C20.5251 23.545 20.3676 20.5325 20.3301 19.9075C20.3301 19.79 20.3276 18.56 19.8951 17.97C19.5851 17.5425 19.0576 17.38 18.7376 17.32C18.8671 17.1413 19.0378 16.9964 19.2351 16.8975C19.8151 16.6075 20.8601 16.565 21.8976 16.565H22.4751C23.6001 16.58 23.8901 16.6525 24.2976 16.755C25.1226 16.9525 25.1401 17.485 25.0676 19.3075C25.0451 19.825 25.0226 20.41 25.0226 21.1C25.0226 21.25 25.0151 21.41 25.0151 21.58C24.9901 22.5075 24.9601 23.56 25.6151 23.9925C25.7006 24.0461 25.7993 24.0747 25.9001 24.075C26.1276 24.075 26.8126 24.075 28.6676 20.8925C29.2397 19.8681 29.7369 18.8037 30.1551 17.7075C30.1926 17.6425 30.3026 17.4425 30.4326 17.365C30.5286 17.3161 30.6349 17.2912 30.7426 17.2925H35.1951C35.6801 17.2925 36.0126 17.365 36.0751 17.5525C36.1851 17.85 36.0551 18.7575 34.0226 21.51L33.1151 22.7075C31.2726 25.1225 31.2726 25.245 33.2301 27.0775V27.0775Z"
+                    d="M47.9998 24C47.9998 30.3652 45.4713 36.4697 40.9704 40.9706C36.4695 45.4714 30.365 48 23.9998 48C17.6347 48 11.5302 45.4714 7.02928 40.9706C2.52841 36.4697 -0.000152588 30.3652 -0.000152588 24C-0.000152588 17.6348 2.52841 11.5303 7.02928 7.02944C11.5302 2.52856 17.6347 0 23.9998 0C30.365 0 36.4695 2.52856 40.9704 7.02944C45.4713 11.5303 47.9998 17.6348 47.9998 24ZM24.8608 17.718C22.5268 18.69 17.8588 20.7 10.8628 23.748C9.72885 24.198 9.13185 24.642 9.07785 25.074C8.98785 25.803 9.90285 26.091 11.1478 26.484L11.6728 26.649C12.8968 27.048 14.5468 27.513 15.4018 27.531C16.1818 27.549 17.0488 27.231 18.0058 26.571C24.5428 22.158 27.9178 19.929 28.1278 19.881C28.2778 19.845 28.4878 19.803 28.6258 19.929C28.7668 20.052 28.7518 20.289 28.7368 20.352C28.6468 20.739 25.0558 24.075 23.1988 25.803C22.6198 26.343 22.2088 26.724 22.1248 26.811C21.9399 27 21.7519 27.1861 21.5608 27.369C20.4208 28.467 19.5688 29.289 21.6058 30.633C22.5868 31.281 23.3728 31.812 24.1558 32.346C25.0078 32.928 25.8598 33.507 26.9638 34.233C27.2428 34.413 27.5128 34.608 27.7738 34.794C28.7668 35.502 29.6638 36.138 30.7648 36.036C31.4068 35.976 32.0698 35.376 32.4058 33.576C33.2008 29.325 34.7638 20.118 35.1238 16.323C35.1458 16.0075 35.1327 15.6906 35.0848 15.378C35.0566 15.1258 34.9345 14.8934 34.7428 14.727C34.4699 14.5386 34.1445 14.4409 33.8128 14.448C32.9128 14.463 31.5238 14.946 24.8608 17.718Z"
                     fill="white" />
                 </svg>
+
               </a>
 
             </li>
             <li class="contacts__item">
-              <a class="contacts__link" href="https://www.facebook.com/" target="_blank">
+              <a class="contacts__link" href="https://web.telegram.org/z/" target="_blank">
                 <svg class="contacts__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path class="contacts__icon-logo" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M0.00012207 25.1396C0.00012207 37.5687 9.02721 47.9042 20.8335 50V31.9437H14.5835V25H20.8335V19.4437C20.8335 13.1937 24.8605 9.72292 30.5564 9.72292C32.3605 9.72292 34.3064 10 36.1105 10.2771V16.6667H32.9168C29.8605 16.6667 29.1668 18.1937 29.1668 20.1396V25H35.8335L34.723 31.9437H29.1668V50C40.973 47.9042 50.0001 37.5708 50.0001 25.1396C50.0001 11.3125 38.7501 0 25.0001 0C11.2501 0 0.00012207 11.3125 0.00012207 25.1396Z"
+                  <path class="contacts__icon-logo"
+                    d="M25.0005 0C11.1947 0 -0.000152588 11.1936 -0.000152588 25.0006C-0.000152588 35.2378 6.15562 44.0314 14.9646 47.8981C14.8941 46.1526 14.9511 44.0558 15.3998 42.159C15.8806 40.1282 18.6165 28.5359 18.6165 28.5359C18.6165 28.5359 17.8178 26.9397 17.8178 24.5808C17.8178 20.8763 19.9652 18.1077 22.6383 18.1077C24.912 18.1077 26.0107 19.8154 26.0107 21.8609C26.0107 24.1468 24.5537 27.5635 23.8037 30.7327C23.1768 33.3859 25.1338 35.5481 27.7498 35.5481C32.4864 35.5481 35.6761 29.4647 35.6761 22.2558C35.6761 16.7782 31.9864 12.6769 25.2742 12.6769C17.6902 12.6769 12.9659 18.3321 12.9659 24.6487C12.9659 26.8282 13.6082 28.3635 14.6146 29.5513C15.0768 30.0981 15.1409 30.318 14.9736 30.9462C14.8537 31.4058 14.5781 32.5128 14.4646 32.9519C14.2986 33.5853 13.7857 33.8109 13.2127 33.5776C9.71972 32.1513 8.0928 28.3263 8.0928 24.0263C8.0928 16.9237 14.0819 8.40898 25.9601 8.40898C35.5056 8.40898 41.7877 15.316 41.7877 22.732C41.7877 32.5378 36.3351 39.8647 28.2979 39.8647C25.5998 39.8647 23.0607 38.4051 22.1909 36.7487C22.1909 36.7487 20.7396 42.5077 20.4325 43.6218C19.9024 45.5494 18.8646 47.4763 17.9159 48.9769C20.2162 49.6571 22.6024 50.0025 25.0011 50.0026C38.8063 50.0013 49.9998 38.8071 49.9998 25.0006C49.9998 11.1936 38.8063 0 25.0005 0Z"
                     fill="white" />
                 </svg>
+
               </a>
 
             </li>
@@ -539,34 +558,38 @@
               <a class="contacts__link" href="https://web.telegram.org/" target="_blank">
                 <svg class="contacts__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path class="contacts__icon-logo"
-                    d="M50.0001 25C50.0001 31.6304 47.3662 37.9893 42.6778 42.6777C37.9894 47.3661 31.6305 50 25.0001 50C18.3697 50 12.0109 47.3661 7.32245 42.6777C2.63404 37.9893 0.00012207 31.6304 0.00012207 25C0.00012207 18.3696 2.63404 12.0107 7.32245 7.32233C12.0109 2.63392 18.3697 0 25.0001 0C31.6305 0 37.9894 2.63392 42.6778 7.32233C47.3662 12.0107 50.0001 18.3696 50.0001 25V25ZM25.897 18.4563C23.4657 19.4688 18.6032 21.5625 11.3157 24.7375C10.1345 25.2062 9.51262 25.6687 9.45637 26.1187C9.36262 26.8781 10.3157 27.1781 11.6126 27.5875L12.1595 27.7594C13.4345 28.175 15.1532 28.6594 16.0439 28.6781C16.8564 28.6969 17.7595 28.3656 18.7564 27.6781C25.5657 23.0813 29.0814 20.7594 29.3001 20.7094C29.4564 20.6719 29.6751 20.6281 29.8189 20.7594C29.9657 20.8875 29.9501 21.1344 29.9345 21.2C29.8407 21.6031 26.1001 25.0781 24.1657 26.8781C23.5626 27.4406 23.1345 27.8375 23.047 27.9281C22.8543 28.125 22.6585 28.3188 22.4595 28.5094C21.272 29.6531 20.3845 30.5094 22.5064 31.9094C23.5282 32.5844 24.347 33.1375 25.1626 33.6937C26.0501 34.3 26.9376 34.9031 28.0876 35.6594C28.3782 35.8469 28.6595 36.05 28.9314 36.2437C29.9657 36.9812 30.9001 37.6438 32.047 37.5375C32.7157 37.475 33.4064 36.85 33.7564 34.975C34.5845 30.5469 36.2126 20.9562 36.5876 17.0031C36.6105 16.6745 36.5969 16.3444 36.547 16.0187C36.5176 15.756 36.3904 15.5139 36.1907 15.3406C35.9064 15.1443 35.5674 15.0427 35.222 15.05C34.2845 15.0656 32.8376 15.5688 25.897 18.4563V18.4563Z"
+                  <path class="contacts__icon-logo" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M44.7441 9.66919C48.1583 14.0494 50.0085 19.4463 49.9999 24.9999C49.9999 38.8051 38.805 49.9999 25.0006 49.9999C15.2871 49.9999 6.86596 44.4576 2.7275 36.3647H13.6236C18.8159 36.3647 22.4429 33.566 22.4429 29.0923C22.4429 19.6108 11.5051 23.4737 11.5051 20.1089C11.5051 18.4878 12.8057 17.898 15.1858 17.898H22.7692C24.8711 17.898 27.3435 18.275 27.3435 20.5685V28.1243C27.3435 33.5955 31.6159 36.364 36.0441 36.364C40.548 36.364 44.7435 33.5955 44.7435 28.1243V9.66919H44.7441Z"
+                    fill="white" />
+                  <path class="contacts__icon-logo" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.0005 2.43241e-05C30.0173 -0.00698868 34.919 1.50262 39.0626 4.33079V28.3013C39.0626 29.9628 37.7037 31.3224 36.0447 31.3224C34.3838 31.3224 33.0261 29.9628 33.0261 28.3013V21.1186C33.0261 15.3846 30.1242 12.9994 26.3447 12.9994H14.0441C9.59088 12.9994 5.89665 15.834 5.89665 20.3289C5.89665 22.6289 6.8819 25.9994 11.5415 26.8353C15.337 27.5186 16.8351 27.3199 16.8351 29.3506C16.8351 31.3224 14.6261 31.3224 11.7101 31.3224H0.808189C0.269676 29.2582 -0.0019826 27.1334 -0.000143311 25C-0.000143311 11.1981 11.196 2.43241e-05 25.0005 2.43241e-05Z"
                     fill="white" />
                 </svg>
+
               </a>
             </li>
           </ul>
         </div>
 
         <div class="contacts__block-map">
-          <img src="./style/contacts/img/contacts-map.jpg" alt="Расположение на карте" class="contacts__img">
+          <img class="contacts__img" src="./style/contacts/img/contacts-map.jpg" alt="Расположение на карте">
         </div>
-
       </div>
 
 
-          <div class="contacts__info-block">
-            <span class="contacts__info-span">
-              © Game Over, 2022
-            </span>
-  
-            <address class="contacts__autor-address">
-              <p>
-                Design by Anastasia Ilina
-              </p>
-              <a class="contacts__autor-email" href="ilina9825@gmail.com" target="_blank">ilina9825@gmail.com</a>
-            </address>
-          </div>
+      <div class="contacts__info-block">
+        <span class="contacts__info-span">
+          © Game Over, 2022
+        </span>
+
+        <address class="contacts__autor-address">
+          <p>
+            Design by Anastasia Ilina
+          </p>
+          <a class="contacts__autor-email" href="ilina9825@gmail.com" target="_blank">ilina9825@gmail.com
+          </a>
+        </address>
+      </div>
 
     </div>
 

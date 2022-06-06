@@ -7,10 +7,48 @@
   padding-top: 30px;
 }
 
+.header__logo {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 66px;
+  position: relative;
+}
+
+.header__logo::before {
+  content: "";
+  position: absolute;
+  width: 51px;
+  height: 32px;
+  left: 0;
+  bottom: 0;
+  background: transparent;
+  border-bottom: 1px solid var(--individ-elements_color);
+  border-left: 1px solid var(--individ-elements_color);
+}
+
+.header__logo::after {
+  content: "";
+  position: absolute;
+  width: 51px;
+  height: 32px;
+  right: 0;
+  top: 0;
+  background: transparent;
+  border-top: 1px solid var(--individ-elements_color);
+  border-right: 1px solid var(--individ-elements_color);
+}
+
+.header__logo-img {
+  margin: 0 auto;
+  width: 78.71px;
+  height: 37.01px;
+}
+
 .menu__list {
   display: flex;
   flex-direction: row;
-  gap: 0 40px;
+  gap: 0 41px;
 }
 
 .menu__item {
@@ -21,13 +59,13 @@
 }
 
 .header__button-call {
-  width: 280px;
-  height: 55px;
+  padding: 9px 29px;
   border: 3px solid var(--individ-elements_color);
   border-radius: 10px;
   font-family: 'Arial';
   font-weight: 700;
   font-size: 22px;
+  line-height: 30px;
   text-transform: uppercase;
   color: white;
   background-color: #1b1a1b;
@@ -49,4 +87,90 @@
   background-color: var(--button_bg_color);
   border: none;
   transition-timing-function: ease-in;
+}
+
+@media (max-width: 1150px) {
+  .header__logo {
+    width: 87px;
+    height: 55px;
+  }
+
+  .header__logo-img {
+    width: 62.97px;
+    height: 29.61px;
+  }
+
+  .menu__list {
+    gap: 0 20px;
+  }
+
+  .menu__item {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .header__button-call {
+    padding: 7px 24px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 960px) {
+  .header__logo {
+    width: 87px;
+    height: 55px;
+    margin-left: 55px;
+    order: 1;
+  }
+
+  .menu__item {
+    display: none;
+  }
+
+  .menu__list {
+    position: relative;
+  }
+
+  .menu__list::before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 29px;
+    top: -13px;
+    left: 0;
+    background-image: url(./img/header-logo_before.svg);
+    background-size: cover;
+  }
+
+  .header__button-call {
+    order: 2;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-wrapper {
+    padding-top: 21px;
+  }
+
+  .header__logo {
+    width: 66px;
+    height: 42px;
+    margin: 0;
+  }
+
+  .header__logo-img {
+    width: 47.77px;
+    height: 22.61px;
+  }
+
+  .menu__list::before {
+    width: 39px;
+    height: 20px;
+    top: -8px;
+  }
+
+  .header__button-call {
+    display: none;
+  }
 }
