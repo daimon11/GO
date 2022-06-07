@@ -98,9 +98,12 @@
 
   .faq__item:nth-child(odd),
   .faq__item:nth-child(even) {
+    color: #1C1A1A;
     font-size: 20px;
     line-height: 24px;
     padding: 23px 25px;
+    background-color: #fff;
+
   }
 
   .faq__item:nth-child(even)::after,
@@ -108,6 +111,7 @@
     width: 46px;
     height: 46px;
     right: 20px;
+    background-image: url("../faq/icons/faq__open-icon-1.svg");
   }
 
   .faq__item:last-child {

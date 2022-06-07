@@ -184,6 +184,14 @@
     margin-bottom: 10px;
   }
 
+  .reviews__photo_position_top {
+    object-position: right 0 top -15px;
+  }
+  
+  .reviews__photo_position_bottom {
+    object-position: right 0 bottom -20px;
+  }  
+
   .reviews__discription {
     font-size: 12px;
     line-height: 16px;

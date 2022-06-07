@@ -2,7 +2,7 @@
   background-color: var(--bg_color);
   color: white;
   text-align: center;
-  padding: 80px 0;
+  padding: 78px 0 80px 0;
 }
 
 .booking__title {
@@ -357,6 +357,15 @@
 
   .booking__fun-fieldset:last-child {
     padding: 0;
+  }
+
+  .booking__fun-block {
+    padding-right: 57px;
+  } 
+
+  .booking__fun-list_break_size_s:not(:last-child) {
+    gap: 18px;
+    padding-left: 2px;
   }
 
   .booking__fieldset {

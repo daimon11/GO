@@ -59,6 +59,7 @@
 }
 
 .header__button-call {
+  margin-top: 4px;
   padding: 9px 29px;
   border: 3px solid var(--individ-elements_color);
   border-radius: 10px;
