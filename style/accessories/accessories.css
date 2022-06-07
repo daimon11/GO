@@ -198,15 +198,16 @@
     width: 135px;
     margin: 0;
   }
+
+  .accessories__img-text {
+    max-width: 113px;
+    min-height: 42px;
+    font-size: 10px;
+    line-height: 14px;
+    bottom: 3px;
+    left: 10px;
+    white-space: normal;
+    -webkit-line-clamp: 3;
+  }
 }
 
-/* .accessories__img-text {
-  max-width: 113px;
-  min-height: 42px;
-  font-size: 10px;
-  line-height: 14px;
-  bottom: 3px;
-  left: 10px;
-  white-space: normal;
-  -webkit-line-clamp: 3;
-} */

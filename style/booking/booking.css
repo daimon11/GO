@@ -482,6 +482,10 @@
     line-height: 28px;
     padding: 13px 47px;
   }
+
+  .booking__fieldset:not(:first-child) {
+    padding: 0 0;
+  }
 }
 
 @media (max-width: 650px) {
@@ -496,6 +500,10 @@
 
   .booking__wrapper {
     gap: 30px;
+  }
+
+  .booking__fieldset:not(:first-child) {
+    padding: 0 0;
   }
 
   .booking__legend {
