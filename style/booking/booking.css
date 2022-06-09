@@ -80,7 +80,7 @@
 }
 
 .visually-hidden:focus+.booking__span-radio-btn {
-  border: 3px solid var(--button_bg_color-active);
+  border: 3px solid var(--button_border_color);
   background-color: white;
   transition-timing-function: ease-in-out;
 }
@@ -164,7 +164,7 @@
   content: "";
   position: absolute;
   background: none;
-  border: 1px solid var(--button_border_color);
+  border: 1px solid var(--individ-elements_color);
   width: 33px;
   height: 33px;
   top: -3px;
@@ -453,10 +453,10 @@
   }
 
   .booking__span_indent_s::after {
-    width: 52px;
-    height: 52px;
-    top: -6px;
-    left: -6px;
+    width: 46px;
+    height: 46px;
+    top: -3px;
+    left: -3px;
   }
 
   .booking__data-time-block {
@@ -557,8 +557,8 @@
   .booking__span_indent_s::after {
     width: 36px;
     height: 36px;
-    top: -6px;
-    left: -6px;
+    top: -3px;
+    left: -3px;
   }
 
   .booking__span_indent_xl::after {
@@ -566,8 +566,7 @@
     height: 36px;
   }
 
-  .booking__span_indent_xl,
-  .booking__span_indent_s::after {
+  .booking__span_indent_xl {
     width: 30px;
     height: 30px;
   }
