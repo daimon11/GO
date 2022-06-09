@@ -117,6 +117,15 @@
   .faq__item:last-child {
     display: none;
   }
+
+  .faq__item:nth-child(even):hover::after {
+    background-image: url("../faq/icons/faq__open-icon-1_hover.svg");
+  }
+  
+  .faq__item:nth-child(even):active::after {
+    background-image: url("../faq/icons/faq__open-icon-1_activ.svg");
+    transition-timing-function: ease-in-out;
+  }
 }
 
 @media (max-width: 960px) {

@@ -80,13 +80,13 @@
 
 .header__button-call:active {
   background-color: var(--button_bg_color-active);
-  border: none;
+  border: 3px solid var(--button_bg_color-active);
   transition-timing-function: ease-in-out;
 }
 
 .header__button-call:focus {
   background-color: var(--button_bg_color);
-  border: none;
+  border: 3px solid var(--button_bg_color);
   transition-timing-function: ease-in;
 }
 
