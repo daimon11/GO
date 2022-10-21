@@ -10,10 +10,38 @@
   <link rel="stylesheet" href="./style/normalize.css">
   <link rel="stylesheet" href="./style/default-max.css">
   <link rel="stylesheet" href="./style/style.css">
+
+  <script type="module" src="/script/main.js"></script>
+  
   <title>GO</title>
 </head>
 
 <body class="page">
+
+  <section class="modal">
+
+      <form action="#" class="modal__form">
+
+          <h3 class="modal__title">Заказать звонок</h3>
+          <button class="modal__button-close" type="submit" value="Закрыть окно" form="my-form"></button>
+
+          <fieldset class="modal__form-box">
+            <label class="modal__label">
+              <span class="modal__text">Имя</span>
+              <input class="modal__input" type="text" required>
+            </label>
+            <label class="modal__label">
+              <span class="modal__text">Телефон</span>
+              <input class="modal__input" type="number" required>
+            </label>
+          </fieldset>
+
+          <button class="modal__button" type="submit" value="Добавить товар" form="my-form">Позвоните мне
+          </button>
+
+      </form>
+
+  </section>
 
   <header class="header">
     <div class="container">
@@ -413,7 +441,8 @@
         <h2 class="title about__title">О нас</h2>
         <div class="about__wrapper">
           <img class="about__photos" src="./style/about/img/all-img.jpg" alt="Тематические изображения">
-          <p class="about__discription">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности
+          <p class="about__discription">Для наших гостей мы создали концептуально новое игровое пространство виртуальной
+            реальности
             в центральной части города.
           </p>
           <p class="about__discription">Каждый день мы стараемся создавать
@@ -480,24 +509,80 @@
         <ul class="faq__list">
 
           <li class="faq__item">
-            <p class="faq__paragraph">Можно ли забронировать комнату онлайн?</p>
+            <div class="faq__header-wrapper">
+              <p class="faq__paragraph">Можно ли забронировать комнату онлайн?</p>
+              <button class="faq__btn faq__btn-dark">
+              </button>
+            </div>
+
+            <div class="faq__text-wrapper">
+              <p class="faq__text">
+                Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать
+                комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b>
+              </p>
+            </div>
           </li>
 
           <li class="faq__item">
-            <p class="faq__paragraph">Могут ли мне вернуть деньги за бронь?</p>
+            <div class="faq__header-wrapper">
+              <p class="faq__paragraph">Могут ли мне вернуть деньги за бронь?</p>
+              <button class="faq__btn faq__btn-light">
+              </button>
+            </div>
+
+            <div class="faq__text-wrapper">
+              <p class="faq__text">
+                Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать
+                комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b>
+              </p>
+            </div>
           </li>
 
           <li class="faq__item">
-            <p class="faq__paragraph">Какая комната самая популярная?</p>
+            <div class="faq__header-wrapper">
+              <p class="faq__paragraph">Какая комната самая популярная?</p>
+              <button class="faq__btn faq__btn-dark">
+              </button>
+            </div>
+
+            <div class="faq__text-wrapper">
+              <p class="faq__text">
+                Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать
+                комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b>
+              </p>
+            </div>
           </li>
 
           <li class="faq__item">
-            <p class="faq__paragraph">Как получить VIP карту?</p>
+            <div class="faq__header-wrapper">
+              <p class="faq__paragraph">Как получить VIP карту?</p>
+              <button class="faq__btn faq__btn-light">
+              </button>
+            </div>
+
+            <div class="faq__text-wrapper">
+              <p class="faq__text">
+                Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать
+                комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b>
+              </p>
+            </div>
           </li>
 
           <li class="faq__item">
-            <p class="faq__paragraph">Какая комната самая популярная?</p>
+            <div class="faq__header-wrapper">
+              <p class="faq__paragraph">Какая комната самая популярная?</p>
+              <button class="faq__btn faq__btn-dark">
+              </button>
+            </div>
+
+            <div class="faq__text-wrapper">
+              <p class="faq__text">
+                Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать
+                комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b>
+              </p>
+            </div>
           </li>
+
         </ul>
       </div>
     </section>
