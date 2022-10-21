@@ -14,7 +14,7 @@
 .modal.modal_visible {
   opacity: 1;
   visibility: visible;
-  z-index: 1;
+  z-index: 3;
 }
 
 .modal.modal_visible .modal__form {
@@ -49,13 +49,14 @@
 
 .modal__button-close {
   position: absolute;
+  top: 15px;
+  right: 15px;
   width: 43px;
   height: 43px;
   background: transparent;
   background-image: url(./img/close.svg);
+  background-size: contain;
   border: none;
-  top: 15px;
-  right: 15px;
 }
 
 .modal__form-box,
@@ -104,4 +105,27 @@
 .modal__button:hover {
   border: 3px solid var(--button_bg_color-white);
   background: var(--button_bg_color-white);
+}
+
+@media (max-width: 710px) {
+
+  .modal {
+    padding: 0 20px;
+  }
+
+  .modal__form {
+    padding: 60px 30px 88px;
+    gap: 50px;
+  }
+
+  .modal__button-close {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal.modal_visible .modal__form {
+    top: 20px;
+  }
 }
