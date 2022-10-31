@@ -11,8 +11,6 @@ const distance = 420;
 let requestId = NaN;
 let requestEndId = NaN;
 
-
-
 // получить значение translateY
 const getTranslateYValue = (translateString) => {
   let n = translateString.indexOf("(");
@@ -20,9 +18,7 @@ const getTranslateYValue = (translateString) => {
 
   let res = translateString.slice(n + 1, n1 - 2);
   return +res;
-}
-
-const elemTranslateYValue = getTranslateYValue(menuList.style.transform);
+};
 
 // закрыть окно
 const hideOverlay = () => {
@@ -35,7 +31,7 @@ const hideOverlay = () => {
     requestAnimationFrame(hideOverlay);
   } else {
     overlay.style.opacity = 0;
-    btnMenu.classList.remove('menu__btn-list--type_open');
+    document.querySelector('.menu__btn-list--type_open').classList.remove('menu__btn-list--type_open');
   }
 };
 
@@ -45,7 +41,12 @@ const endAnimation = (duration, callback) => {
   requestEndId = requestAnimationFrame(function stepBack() {
     endAnimation ||= performance.now();
 
+
     const progress = (performance.now() - endAnimation) / duration;
+
+    console.log('endAnimation ', endAnimation);
+    console.log('performance', performance.now());
+    console.log('progress ', progress);
 
     callback(progress);
     if (progress < 1) {
@@ -72,7 +73,7 @@ const startAnimation = (duration, callback) => {
 };
 
 export const rollUpMenu = () => {
-  btnCall.removeAttribute('disabled', 'disabled');
+  const elemTranslateYValue = getTranslateYValue(menuList.style.transform);
   endAnimation(durationMoving, (progress) => {
     const topBack = progress * distance;
     menuList.style.transform = `translateY(${elemTranslateYValue - topBack}px)`;

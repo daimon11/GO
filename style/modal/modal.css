@@ -23,21 +23,26 @@
 }
 
 .modal__form {
-  display: flex;
-  max-width: 620px;
+  max-width: 600px;
+  top: 145px;
+  position: relative;
   padding: 60px 160px 80px;
-  top: 0;
-  flex-direction: column;
+  margin: 0 auto;
+  background-color: #440F51;
+  z-index: 2;
+  opacity: 0;
   align-items: center;
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 40px;
-  background-color: #440F51;
-  position: relative;
-  opacity: 0;
   transition-property: top, opacity;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
-  z-index: 2;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -116,7 +121,7 @@
   }
 
   .modal__form {
-    max-width: 280px;
+    max-width: 100%;
     padding: 60px 30px 88px;
     gap: 50px;
   }

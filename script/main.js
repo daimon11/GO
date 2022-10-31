@@ -13,6 +13,8 @@ const init = () => {
   // acc
   const items = document.querySelectorAll('.faq__item');
   const textWrapper = document.querySelectorAll('.faq__text-wrapper');
+  const btns = document.querySelectorAll('.faq__btn');
+  const screenWidth = document.documentElement.scrollWidth;
   // menuShow
   const header = document.querySelector('.header');
   console.log(header);
@@ -20,13 +22,14 @@ const init = () => {
   const btnMenu = document.querySelector('.menu__btn-list');
 
   modalControl(buttonCall, buttonClose, modalWindow, form);
-  acc(items, textWrapper);
+  acc(items, textWrapper, btns, screenWidth);
 
   header.addEventListener('click', e => {
     const target = e.target;
     if (target === btnMenu && btnMenu.classList.contains('menu__btn-list--type_open')
       || target.closest('.menu-wrapper')) {
-        console.log('rollUpMenu')
+      btnCall.removeAttribute('disabled', 'disabled');
+      console.log('rollUpMenu');
       rollUpMenu();
     };
     if (target === btnMenu && !(btnMenu.classList.contains('menu__btn-list--type_open'))) {
