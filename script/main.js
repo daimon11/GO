@@ -17,8 +17,6 @@ const init = () => {
   const screenWidth = document.documentElement.scrollWidth;
   // menuShow
   const header = document.querySelector('.header');
-  console.log(header);
-  const btnCall = document.querySelector('.header__button-call');
   const btnMenu = document.querySelector('.menu__btn-list');
 
   modalControl(buttonCall, buttonClose, modalWindow, form);
@@ -28,15 +26,13 @@ const init = () => {
     const target = e.target;
     if (target === btnMenu && btnMenu.classList.contains('menu__btn-list--type_open')
       || target.closest('.menu-wrapper')) {
-      btnCall.removeAttribute('disabled', 'disabled');
-      console.log('rollUpMenu');
+      // btnCall.removeAttribute('disabled', 'disabled');
       rollUpMenu();
     };
     if (target === btnMenu && !(btnMenu.classList.contains('menu__btn-list--type_open'))) {
-      console.log('openOverlay');
       openOverlay();
       btnMenu.classList.add('menu__btn-list--type_open');
-      btnCall.setAttribute('disabled', 'disabled');
+      // btnCall.setAttribute('disabled', 'disabled');
     }
   });
 };

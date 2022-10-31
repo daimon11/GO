@@ -1,12 +1,15 @@
 const overlay = document.querySelector('.menu-wrapper');
 const menuList = document.querySelector('.menu__list');
+const btnCall = document.querySelector('.header__button-call');
 
 let startTime = NaN;
 let endTime = NaN;
 
 const durationMoving = 400;
 const durationOpacity = 100;
-const distance = 420;
+const distance = Math.abs(menuList.offsetTop);
+
+console.log();
 
 let requestId = NaN;
 let requestEndId = NaN;
@@ -22,6 +25,7 @@ const getTranslateYValue = (translateString) => {
 
 // закрыть окно
 const hideOverlay = () => {
+  overlay.style.zIndex = -1;
   endTime ||= performance.now();
 
   const progress = (performance.now() - endTime) / durationOpacity;
@@ -41,12 +45,7 @@ const endAnimation = (duration, callback) => {
   requestEndId = requestAnimationFrame(function stepBack() {
     endAnimation ||= performance.now();
 
-
     const progress = (performance.now() - endAnimation) / duration;
-
-    console.log('endAnimation ', endAnimation);
-    console.log('performance', performance.now());
-    console.log('progress ', progress);
 
     callback(progress);
     if (progress < 1) {
@@ -68,12 +67,15 @@ const startAnimation = (duration, callback) => {
     callback(progress);
     if (progress < 1) {
       requestId = requestAnimationFrame(step);
+    } else {
+      btnCall.classList.remove('header__button-call--size_small');
     }
   });
 };
 
 export const rollUpMenu = () => {
   const elemTranslateYValue = getTranslateYValue(menuList.style.transform);
+  btnCall.classList.add('header__button-call--size_small');
   endAnimation(durationMoving, (progress) => {
     const topBack = progress * distance;
     menuList.style.transform = `translateY(${elemTranslateYValue - topBack}px)`;
@@ -88,6 +90,7 @@ const unwrapMenu = () => {
 };
 
 export const openOverlay = () => {
+  overlay.style.zIndex = 3;
   startTime ||= performance.now();
 
   const progress = (performance.now() - startTime) / durationOpacity;

@@ -14,7 +14,7 @@
 .modal.modal_visible {
   opacity: 1;
   visibility: visible;
-  z-index: 3;
+  z-index: 11;
 }
 
 .modal.modal_visible .modal__form {
@@ -29,7 +29,7 @@
   padding: 60px 160px 80px;
   margin: 0 auto;
   background-color: #440F51;
-  z-index: 2;
+  z-index: 11;
   opacity: 0;
   align-items: center;
 }
