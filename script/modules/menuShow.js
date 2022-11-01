@@ -7,9 +7,7 @@ let endTime = NaN;
 
 const durationMoving = 400;
 const durationOpacity = 100;
-const distance = Math.abs(menuList.offsetTop);
-
-console.log();
+let distance = Math.abs(menuList.offsetTop);
 
 let requestId = NaN;
 let requestEndId = NaN;
@@ -35,11 +33,11 @@ const hideOverlay = () => {
     requestAnimationFrame(hideOverlay);
   } else {
     overlay.style.opacity = 0;
-    document.querySelector('.menu__btn-list--type_open').classList.remove('menu__btn-list--type_open');
+
   }
 };
 
-const endAnimation = (duration, callback) => {
+const endAnimation = (btn, duration, callback) => {
   let endAnimation = NaN;
 
   requestEndId = requestAnimationFrame(function stepBack() {
@@ -52,6 +50,7 @@ const endAnimation = (duration, callback) => {
       requestEndId = requestAnimationFrame(stepBack);
     } else {
       hideOverlay();
+      btn.classList.remove('menu__btn-list--type_open');
     }
   });
 };
@@ -73,10 +72,10 @@ const startAnimation = (duration, callback) => {
   });
 };
 
-export const rollUpMenu = () => {
+export const rollUpMenu = (btnMenu) => {
   const elemTranslateYValue = getTranslateYValue(menuList.style.transform);
   btnCall.classList.add('header__button-call--size_small');
-  endAnimation(durationMoving, (progress) => {
+  endAnimation(btnMenu, durationMoving, (progress) => {
     const topBack = progress * distance;
     menuList.style.transform = `translateY(${elemTranslateYValue - topBack}px)`;
   });
@@ -90,6 +89,7 @@ const unwrapMenu = () => {
 };
 
 export const openOverlay = () => {
+
   overlay.style.zIndex = 3;
   startTime ||= performance.now();
 
@@ -104,3 +104,13 @@ export const openOverlay = () => {
   }
 };
 
+window.addEventListener('resize', e => {
+  let top = Math.abs(
+    menuList.offsetTop);
+  distance = Math.abs(menuList.offsetTop);
+  if (window.innerWidth > 960) {
+    menuList.removeAttribute('style');
+    overlay.removeAttribute('style');
+    document.querySelector('.menu__btn-list').classList.remove('menu__btn-list--type_open');
+  }
+}, true);

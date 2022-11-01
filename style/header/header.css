@@ -45,6 +45,11 @@
   height: 37.01px;
 }
 
+.menu-wrapper {
+  /* height: 0; */
+  opacity: 1;
+}
+
 .menu__btn-list {
   display: none;
 }
@@ -161,20 +166,19 @@
 
   .menu-wrapper {
     position: fixed;
-    height: 100%;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
     background: rgba(27, 26, 27, 0.7);
-    z-index: -1;
-    margin: 95px 40px 0;
+    margin: 95px 20px 0;
     opacity: 0;
+    z-index: -1;
   }
 
   .menu__list {
     position: relative;
-    top: -420px;
+    top: -425px;
     left: 0;
     width: 100%;
     padding: 70px 0 48px 0;
@@ -184,6 +188,7 @@
     align-items: center;
     gap: 39px;
     background-color: #1B1A1B;
+
   }
 
   .header__button-call {
@@ -239,7 +244,7 @@
   }
 
   .menu__list {
-    top: -352px;
+    top: -350px;
     padding: 36px 0 102px 0;
     gap: 26px;
   }

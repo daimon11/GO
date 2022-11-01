@@ -26,15 +26,14 @@ const init = () => {
     const target = e.target;
     if (target === btnMenu && btnMenu.classList.contains('menu__btn-list--type_open')
       || target.closest('.menu-wrapper')) {
-      // btnCall.removeAttribute('disabled', 'disabled');
-      rollUpMenu();
+      rollUpMenu(btnMenu);
     };
     if (target === btnMenu && !(btnMenu.classList.contains('menu__btn-list--type_open'))) {
-      openOverlay();
       btnMenu.classList.add('menu__btn-list--type_open');
-      // btnCall.setAttribute('disabled', 'disabled');
+      openOverlay();
     }
   });
+
 };
 
 init();
