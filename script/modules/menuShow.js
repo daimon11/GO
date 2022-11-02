@@ -105,8 +105,6 @@ export const openOverlay = () => {
 };
 
 window.addEventListener('resize', e => {
-  let top = Math.abs(
-    menuList.offsetTop);
   distance = Math.abs(menuList.offsetTop);
   if (window.innerWidth > 960) {
     menuList.removeAttribute('style');
