@@ -25,14 +25,12 @@ const init = () => {
   header.addEventListener('click', e => {
     const target = e.target;
     if (target === btnMenu && btnMenu.classList.contains('menu__btn-list--type_open') || target.closest('.menu__link') && btnMenu.classList.contains('menu__btn-list--type_open')) {
+      console.log(window);
       rollUpMenu(btnMenu);
     };
     if (target === btnMenu && !(btnMenu.classList.contains('menu__btn-list--type_open')) && window.innerWidth <= 960) {
       btnMenu.classList.add('menu__btn-list--type_open');
       openOverlay();
-      window.addEventListener('scroll', e => {
-        window.scrollTo({top: 0})
-      })
     }
   });
 

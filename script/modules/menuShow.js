@@ -12,6 +12,22 @@ let distance = Math.abs(menuList.offsetTop);
 let requestId = NaN;
 let requestEndId = NaN;
 
+// отключение и включение скроллинга
+let disableScroll = () => {
+	let pagePosition = window.scrollY;
+	document.body.classList.add('disable-scroll');
+	document.body.dataset.position = pagePosition;
+	document.body.style.top = -pagePosition + 'px';
+}
+
+let enableScroll = () => {
+	let pagePosition = parseInt(document.body.dataset.position, 10);
+	document.body.style.top = 'auto';
+	document.body.classList.remove('disable-scroll');
+	window.scroll({ top: pagePosition, left: 0 });
+	document.body.removeAttribute('data-position');
+}
+
 // получить значение translateY
 const getTranslateYValue = (translateString) => {
   let n = translateString.indexOf("(");
@@ -73,6 +89,7 @@ const startAnimation = (duration, callback) => {
 };
 
 export const rollUpMenu = (btnMenu) => {
+  enableScroll();
   const elemTranslateYValue = getTranslateYValue(menuList.style.transform);
   btnCall.classList.add('header__button-call--size_small');
   endAnimation(btnMenu, durationMoving, (progress) => {
@@ -90,6 +107,7 @@ const unwrapMenu = () => {
 
 export const openOverlay = () => {
 
+  disableScroll();
   overlay.style.zIndex = 3;
   startTime ||= performance.now();
 
