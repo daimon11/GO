@@ -11,8 +11,16 @@
   <link rel="stylesheet" href="./style/default-max.css">
   <link rel="stylesheet" href="./style/style.css">
 
-  <!-- <script src="./script/all.js" defer></script> -->
-  <script type="module" src="/script/main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script defer src="script/jquery-3.6.0.min.js"></script>
+  <script defer src="script/jquery-ui.min.js"></script>
+  <script defer src="script/inputmask.min.js"></script>
+  <script defer src="script/axios.min.js"></script>
+  <script defer src="script/just-validate.production.min.js"></script>
+  <script type="module" src="script/index.js"></script>
 
   <title>GO</title>
 </head>
@@ -29,16 +37,17 @@
         <fieldset class="modal__form-box">
           <label class="modal__label">
             <span class="modal__text">Имя</span>
-            <input class="modal__input" type="text" required>
+            <input class="modal__input" type="text" name="name" required>
           </label>
           <label class="modal__label">
             <span class="modal__text">Телефон</span>
-            <input class="modal__input" type="number" required>
+            <input class="modal__input" name="tel" required>
           </label>
+          <button class="modal__button" type="submit" value="Добавить товар">Позвоните мне
+          </button>
         </fieldset>
 
-        <button class="modal__button" type="submit" value="Добавить товар" form="my-form">Позвоните мне
-        </button>
+
       </div>
     </form>
 
@@ -469,40 +478,67 @@
     <section class="reviews" id="reviews">
       <div class="container">
         <h3 class="title reviews__title">Отзывы посетителей</h3>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <figure class="reviews__customer">
-              <img class="reviews__photo" src="./style/reviews/img/rewiews-photo-man-1.jpg" alt="Фото Макса Самойлова">
-              <figcaption class="reviews__user">Макс Самойлов</figcaption>
-            </figure>
-            <p class="reviews__discription">
-              Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба,
-              никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
-            </p>
-          </li>
-          <li class="reviews__item">
-            <figure class="reviews__customer">
-              <img class="reviews__photo reviews__photo_position_top" src="./style/reviews/img/rewiews-photo-man-2.jpg"
-                alt="Фото Оксны Григорьевой">
-              <figcaption class="reviews__user">Оксана Григорьева</figcaption>
-            </figure>
-            <p class="reviews__discription">
-              Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
-              больше нет подобных заведений
-            </p>
-          </li>
-          <li class="reviews__item">
-            <figure class="reviews__customer">
-              <img class="reviews__photo reviews__photo_position_bottom"
-                src="./style/reviews/img/rewiews-photo-man-3.jpg" alt="Фото Никиты Ященко">
-              <figcaption class="reviews__user">Никита Ященко</figcaption>
-            </figure>
-            <p class="reviews__discription">
-              Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных
-              войн, попал в атмосферу космоса
-            </p>
-          </li>
-        </ul>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews__content">
+                <figure class="reviews__customer">
+                  <img class="reviews__photo" src="./style/reviews/img/rewiews-photo-man-1.jpg"
+                    alt="Фото Макса Самойлова">
+                  <figcaption class="reviews__user">Макс Самойлов</figcaption>
+                </figure>
+                <p class="reviews__discription">
+                  Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба,
+                  никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__content">
+                <figure class="reviews__customer">
+                  <img class="reviews__photo reviews__photo_position_top"
+                    src="./style/reviews/img/rewiews-photo-man-2.jpg" alt="Фото Оксны Григорьевой">
+                  <figcaption class="reviews__user">Оксана Григорьева</figcaption>
+                </figure>
+                <p class="reviews__discription">
+                  Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
+                  больше нет подобных заведений
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__content">
+                <figure class="reviews__customer">
+                  <img class="reviews__photo reviews__photo_position_bottom"
+                    src="./style/reviews/img/rewiews-photo-man-3.jpg" alt="Фото Никиты Ященко">
+                  <figcaption class="reviews__user">Никита Ященко</figcaption>
+                </figure>
+                <p class="reviews__discription">
+                  Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных
+                  войн, попал в атмосферу космоса
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="sliper__button-left">
+            <svg class="slider__btn-r-icon" width="34" height="66" viewBox="0 0 34 66" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M32.5269 0L33.9411 1.41421L1.41422 33.9411L5.126e-06 32.5269L32.5269 0Z" fill="#6C0287" />
+              <path d="M5.126e-06 32.5269L1.41422 31.1127L33.9411 63.6396L32.5269 65.0538L5.126e-06 32.5269Z"
+                fill="#6C0287" />
+            </svg>
+          </button>
+  
+          <button class="sliper__button-right">
+            <svg class="slider__btn-l-icon" width="35" height="66" viewBox="0 0 35 66" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.52686 0L0.112642 1.41421L32.6396 33.9411L34.0538 32.5269L1.52686 0Z" fill="#6C0287" />
+              <path d="M34.0538 32.5269L32.6396 31.1127L0.112642 63.6396L1.52686 65.0538L34.0538 32.5269Z"
+                fill="#6C0287" />
+            </svg>
+          </button>
+        </div>
+
       </div>
     </section>
 

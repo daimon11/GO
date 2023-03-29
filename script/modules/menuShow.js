@@ -14,18 +14,18 @@ let requestEndId = NaN;
 
 // отключение и включение скроллинга
 let disableScroll = () => {
-	let pagePosition = window.scrollY;
-	document.body.classList.add('disable-scroll');
-	document.body.dataset.position = pagePosition;
-	document.body.style.top = -pagePosition + 'px';
+  let pagePosition = window.scrollY;
+  document.body.classList.add('disable-scroll');
+  document.body.dataset.position = pagePosition;
+  document.body.style.top = -pagePosition + 'px';
 }
 
 let enableScroll = () => {
-	let pagePosition = parseInt(document.body.dataset.position, 10);
-	document.body.style.top = 'auto';
-	document.body.classList.remove('disable-scroll');
-	window.scroll({ top: pagePosition, left: 0 });
-	document.body.removeAttribute('data-position');
+  let pagePosition = parseInt(document.body.dataset.position, 10);
+  document.body.style.top = 'auto';
+  document.body.classList.remove('disable-scroll');
+  window.scroll({ top: pagePosition, left: 0 });
+  document.body.removeAttribute('data-position');
 }
 
 // получить значение translateY
@@ -124,9 +124,11 @@ export const openOverlay = () => {
 
 window.addEventListener('resize', e => {
   distance = Math.abs(menuList.offsetTop);
-  if (window.innerWidth > 960) {
-    menuList.removeAttribute('style');
-    overlay.removeAttribute('style');
-    document.querySelector('.menu__btn-list').classList.remove('menu__btn-list--type_open');
+
+  menuList.removeAttribute('style');
+  overlay.removeAttribute('style');
+  document.querySelector('.menu__btn-list').classList.remove('menu__btn-list--type_open');
+  if (!(btnCall.classList.contains('header__button-call--size_small'))) {
+    btnCall.classList.add('header__button-call--size_small');
   }
-}, true);
+});
