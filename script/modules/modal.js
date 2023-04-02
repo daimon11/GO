@@ -1,5 +1,5 @@
 
-const closeModal = (modalWindow) => {
+export const closeModal = (modalWindow) => {
   modalWindow.classList.remove('modal_visible');
 };
 

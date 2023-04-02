@@ -87,8 +87,7 @@ const init = () => {
 
   header.addEventListener('click', e => {
     const target = e.target;
-    console.log(target);
-    if (target === btnMenu && btnMenu.classList.contains('menu__btn-list--type_open') || target.closest('.menu__link') && btnMenu.classList.contains('menu__btn-list--type_open') || target === document.querySelector('.menu-wrapper') || target === document.querySelector('.header__button-call')) {
+    if (target === btnMenu && btnMenu.classList.contains('menu__btn-list--type_open') || target.closest('.menu__link') && btnMenu.classList.contains('menu__btn-list--type_open') || target === document.querySelector('.menu-wrapper')) {
       rollUpMenu(btnMenu);
     };
     if (target === btnMenu && !(btnMenu.classList.contains('menu__btn-list--type_open')) && window.innerWidth <= 960) {

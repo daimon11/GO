@@ -1,3 +1,5 @@
+import { closeModal } from './modal.js';
+
 const overlay = document.querySelector('.menu-wrapper');
 const menuList = document.querySelector('.menu__list');
 const btnCall = document.querySelector('.header__button-call');
@@ -106,7 +108,6 @@ const unwrapMenu = () => {
 };
 
 export const openOverlay = () => {
-
   disableScroll();
   overlay.style.zIndex = 3;
   startTime ||= performance.now();
@@ -131,4 +132,5 @@ window.addEventListener('resize', e => {
   if (!(btnCall.classList.contains('header__button-call--size_small'))) {
     btnCall.classList.add('header__button-call--size_small');
   }
+  closeModal(document.querySelector('.modal'));
 });
